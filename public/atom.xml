@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Matt Marsico&#x27;s Portfolio</title>
+    <subtitle>A elegant light and dark theme for Zola</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://mattmarsico.com/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://mattmarsico.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-09-01T00:00:00+00:00</updated>
+    <id>https://mattmarsico.com/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Sports Betting Strategy</title>
+        <published>2025-09-01T00:00:00+00:00</published>
+        <updated>2025-09-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://mattmarsico.com/blog/sports-betting/"/>
+        <id>https://mattmarsico.com/blog/sports-betting/</id>
+        
+        <content type="html" xml:base="https://mattmarsico.com/blog/sports-betting/">&lt;h1 id=&quot;sports-betting-strategy&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#sports-betting-strategy&quot; aria-label=&quot;Anchor link for: sports-betting-strategy&quot;&gt;Sports Betting Strategy&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Sports betting goes back thousands of years and has long been a pastime for sports enthusiasts.
+Unfortunately, it can turn into an addiction, or be the precursor to financial ruin for many individuals.
+Recently, I have developed an interest in statistics-based sports betting. I compare it
+to something like counting cards in a casino. Not illegal, but you will be limited very quickly when Vegas finds out.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;sports-betting-vs-stock-market&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#sports-betting-vs-stock-market&quot; aria-label=&quot;Anchor link for: sports-betting-vs-stock-market&quot;&gt;Sports Betting vs. Stock Market&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Sports-betting has shocking similarity to the stock market
+in more ways than one. Both have strategies for winning, yet nobody knows the real result until it happens.&lt;&#x2F;p&gt;
+&lt;p&gt;Since my focus as a developer is in the algorithmic side of either trading or betting, I noticed that many of
+the strategies for either market remain largely the same, with a common emphasis on statistics.&lt;&#x2F;p&gt;
+&lt;p&gt;The reason I highlight this comparison is to explain that I am not just throwing money away, and that responsible or informed gambling can be equally profitable.
+I could also use this to poke fun at stockbrokers but I&#x27;ll leave that to you. (Gamblers in suits)&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;statistics-in-sports-betting&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#statistics-in-sports-betting&quot; aria-label=&quot;Anchor link for: statistics-in-sports-betting&quot;&gt;Statistics in Sports Betting&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Now that I have mentioned that there &lt;em&gt;are&lt;&#x2F;em&gt; strategies for applying stats in sports betting, I should probably explain what they are.&lt;&#x2F;p&gt;
+&lt;p&gt;The fundamental concept for any type of wager is &lt;strong&gt;expected value&lt;&#x2F;strong&gt;. If you have taken a stats class already I will remind you that it is
+a weighted average of all possible values of a random variable. If you have not taken a stats class, consider the following:&lt;&#x2F;p&gt;
+&lt;p&gt;You are offered a bet on a fair coin flip. If it is heads, you win \$10. If it is tails, you lose \$5.
+You know that the probability of it being heads is 50% and tails is also 50%. You then multiply the
+probability of each outcome by the value obtained from that corresponding outcome. In this case:&lt;&#x2F;p&gt;
+&lt;p&gt;$$ 0.5 \times $10 + 0.5 \times -$5 = $2.50 $$&lt;&#x2F;p&gt;
+&lt;p&gt;This means that every time you play, you are expected to win \$2.50. If you played 100 times, you&#x27;d expect about a \$250 profit in the long run.&lt;&#x2F;p&gt;
+&lt;p&gt;Expected value is the backbone of smart sports betting. I will reference it many times in subsequent sections.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;what-are-the-true-odds&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#what-are-the-true-odds&quot; aria-label=&quot;Anchor link for: what-are-the-true-odds&quot;&gt;What are the True Odds?&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Your next question may be, &quot;how can you get the &lt;em&gt;real&lt;&#x2F;em&gt; probabilities of some type of sports bet?&quot;. The short answer is there is no answer. There will
+never be an exactly correct probability of a certain outcome. In practice, there are a variety of methods to developing a &lt;em&gt;fair&lt;&#x2F;em&gt; line. I will outline a few.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;consensus-line&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#consensus-line&quot; aria-label=&quot;Anchor link for: consensus-line&quot;&gt;Consensus Line&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;One approach you could take is to average all odds for a specific bet into an &quot;average&quot; line. This may give you a solid baseline for what most sportsbooks
+are asking for, but it is important to acknowledge two critical pieces of information. The first is that there are fewer oddsmakers than you realize. Often times
+sportsbooks will just react to an industry-standard oddsmaker, instead of determining a fair line themselves. The second is that some sportsbooks are better
+at setting fair odds than others.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;sharp-vs-non-sharp-soft-sportsbooks&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#sharp-vs-non-sharp-soft-sportsbooks&quot; aria-label=&quot;Anchor link for: sharp-vs-non-sharp-soft-sportsbooks&quot;&gt;Sharp vs Non-Sharp &#x2F; Soft Sportsbooks&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;You can often tell how good a sporstbook is at setting odds by how much they limit their users. A sportsbook like Pinnacle is referred to as &quot;sharp&quot;, because
+their lines are extremely competitive and they don&#x27;t limit winning players. Think of a casino that does not kick you out for counting cards. They make their money
+through tiny margins in the odds called &quot;vig&quot;, so they have an advantage in the long run.&lt;&#x2F;p&gt;
+&lt;p&gt;On the contrary, many sportsbooks cater to your average joe (not a professional gambler). In these cases, they will limit you if you start to win too much money.
+This is often because they are slower to adjust their lines or they focus more on entertainment than line accuracy.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;sharp-sportsbook-consensus&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#sharp-sportsbook-consensus&quot; aria-label=&quot;Anchor link for: sharp-sportsbook-consensus&quot;&gt;Sharp Sportsbook Consensus&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;This brings me to another solution to finding the fair line - the sharp sportsbook consensus. Instead of averaging the lines of &lt;em&gt;all&lt;&#x2F;em&gt; sportsbooks, you just average
+the most statistically-accurate books. This gives you a better representation of the true odds, because many sharp sportsbooks change their lines in response
+to small details about the game like whether the pitcher tweets about wrist pain before the game. This will likely be the best way to determine a fair line.&lt;&#x2F;p&gt;
+&lt;p&gt;Now that you know where to get the data to determine a fair line, let&#x27;s talk about how to actually calculate it.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;odds-conversion-and-removing-vig&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#odds-conversion-and-removing-vig&quot; aria-label=&quot;Anchor link for: odds-conversion-and-removing-vig&quot;&gt;Odds Conversion and Removing Vig&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Remember vig? We need to get rid of that small margin to determine the true odds of the outcome. The odds that they give you &lt;em&gt;can&lt;&#x2F;em&gt; be converted into percentages,
+but they will be skewed by vig, so we must remember to remove it. Consider the following example:&lt;&#x2F;p&gt;
+&lt;p&gt;Using American Odds: Team A has a line of -130 and Team B has a line of +120.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Step 1&lt;&#x2F;strong&gt; is to convert the American Odds to their implied probabilities:&lt;&#x2F;p&gt;
+&lt;p&gt;Team A (negative): $$ p = \frac{a}{a + 100} = \frac{130}{130 + 100} = 0.565217 $$
+Team B (positive): $$ p = \frac{100}{b + 100} = \frac{100}{120 + 100} = 0.454545 $$&lt;&#x2F;p&gt;
+&lt;p&gt;If we sum these odds we notice that $ 0.565217 + 0.454545 = 1.019763 $. That extra few decimals over 1.0 is the vig.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Step 2&lt;&#x2F;strong&gt; is to remove this from our calculation. We accomplish this by &lt;em&gt;normalizing&lt;&#x2F;em&gt; it to 100%.&lt;&#x2F;p&gt;
+&lt;p&gt;$$ p_{fair^A} = 0.565217 &#x2F; 1.019763 = 0.554264 = 55.4264\% $$
+$$ p_{fair^B} = 0.454545 &#x2F; 1.019763 = 0.445736 = 44.5736\% $$&lt;&#x2F;p&gt;
+&lt;p&gt;Congrats! You now have a probability of each outcome without the margin. You can now leverage this information in your future bets.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;placing-the-bets-and-limitations&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#placing-the-bets-and-limitations&quot; aria-label=&quot;Anchor link for: placing-the-bets-and-limitations&quot;&gt;Placing the Bets and Limitations&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Now that you have an accurate probability of the outcomes, you can calculate the expected value and determine if you will face long-run success.
+However, there are a few roadblocks you will face.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Lines are recomputed often and can affect your calculations. Take care in confirming your calculations are still relevent when you place a slip.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;If you win too much, many sportsbooks will limit you. Beware of this and factor it into your strategy.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Some sportsbooks are softer in specific sports or markets. Do some research to find which ones may expose an edge for you.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;You &lt;strong&gt;will&lt;&#x2F;strong&gt; lose, have trust in the long-run effects. Many parlay strategies have around a 20% win rate. Winning 20% of the time does not sound
+great but you &lt;strong&gt;must&lt;&#x2F;strong&gt; hold out, and you will have success over time.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Good luck and enjoy!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>About Me</title>
+        <published>2025-06-14T00:00:00+00:00</published>
+        <updated>2025-06-14T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://mattmarsico.com/aboutme/"/>
+        <id>https://mattmarsico.com/aboutme/</id>
+        
+        <content type="html" xml:base="https://mattmarsico.com/aboutme/">&lt;h1 id=&quot;who-am-i&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#who-am-i&quot; aria-label=&quot;Anchor link for: who-am-i&quot;&gt;Who Am I?&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;My name is Matt Marsico. I am a musician, programmer, and hobbyist. My interests span across technology, music, fitness, and more.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;music&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#music&quot; aria-label=&quot;Anchor link for: music&quot;&gt;Music&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;the-beginning&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#the-beginning&quot; aria-label=&quot;Anchor link for: the-beginning&quot;&gt;The Beginning&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;My first passion was music. I started playing guitar in 2014 and I was enthralled since the day I first picked it up. I remember
+the day I decided to learn was when I first played &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Rocksmith_2014&quot;&gt;Rocksmith 2014&lt;&#x2F;a&gt;
+at my uncle&#x27;s house in May of 2014. American Idiot by Green Day was the first song I played on guitar.
+Not a week after that I ordered my first guitar which was a short scale length
+&lt;a href=&quot;https:&#x2F;&#x2F;www.fender.com&#x2F;products&#x2F;mini-stratocaster&quot;&gt;Squire Mini Stratocaster&lt;&#x2F;a&gt; which was delivered on June 6, 2014.
+I was self-taught for the first two years of my guitar-playing journey. I learned through Rocksmith which was
+a surprisingly good resource for getting started. I say surprisingly loosly because it is literally designed to
+be used as a learning tool but it is also a video game.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;school-of-rock&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#school-of-rock&quot; aria-label=&quot;Anchor link for: school-of-rock&quot;&gt;School of Rock&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;I started taking lessons at School of Rock in 2016, and my first show was Cheap Trick and Aerosmith. The program handled
+the booking of shows, song selection, and gear. It was a great way to get into performing and allowed me to connect
+with other music-minded individuals. I then went on to perform in a variety of other shows like Glam Rock, Led Zeppelin,
+Riot Fest, The Who, The Beatles, British Invasion, Pink Floyd, and Rush. I also joined the House Band which was a more
+experienced group of musicians that played shows a few times a month.&lt;&#x2F;p&gt;
+&lt;p&gt;The setlists were so varied I can hardly remember half of the songs we played, but it was an incredible introduction
+to music of the past and present and allowed me to discover other bands through my friends there. With professional
+teachers I learned quickly and even played at places like &lt;a href=&quot;https:&#x2F;&#x2F;www.summerfest.com&#x2F;&quot;&gt;Summerfest&lt;&#x2F;a&gt; in Milwaukee.&lt;&#x2F;p&gt;
+&lt;img src=&quot;images&#x2F;IMG_6550.JPG&quot; alt=&quot;Young Matt Performing&quot; class=&quot;article-image&quot; &#x2F;&gt;
+&lt;h3 id=&quot;high-school&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#high-school&quot; aria-label=&quot;Anchor link for: high-school&quot;&gt;High School&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;High School was a change as it always is and I was extremely excited to look into our school&#x27;s Rock Band. It is
+a rare opportunity that very few schools offer and fewer promote as much as ours. Our Rock Band was the premiere band
+at the school and also had the benefit of getting some solid funding for performances. We played at masses, plays,
+sporting events like basketball and volleyball games, and even had our own performances. It was very well integrated
+in the school and it showed. During my freshman year I applied to be in the Rock Band which was an uncommon thing to do
+as the band is often reserved for upperclassmen. However, I stubbornly applied and was able to impress the band director
+enough to get a spot as the first freshman to make it into the band. I made an immediate impact and my previous experience
+showed, as I was able to secure lead parts for most of the songs. It was a great way to meet some upperclassmen that I would
+otherwise rarely interact with and bring my passion with me to my school. My freshman year of high school was also the year
+I decided to pick up programming - a hobby that would eventually overshadow but far from extinguish my interest in playing guitar.&lt;&#x2F;p&gt;
+&lt;p&gt;I continued to play in the Rock Band throughout high school where I picked up some serious experience that led to me taking on
+a leadership role in the band. I started creating setlists and organizing rehearsals, but tried my best to maintain the scope
+of my role and stay humble - a difficult task for a high school guitarist. Both my Freshman and Junior years of high school&lt;br &#x2F;&gt;
+we even played at Disney World and Universal Studios. I still need to find the video of me playing a guitar solo at night
+on the Disney Springs Waterside Stage with the Hard Rock Cafe Volcano erupting in the background.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;programming&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#programming&quot; aria-label=&quot;Anchor link for: programming&quot;&gt;Programming&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;the-beginning-again&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#the-beginning-again&quot; aria-label=&quot;Anchor link for: the-beginning-again&quot;&gt;The Beginning (Again)&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;My programming journey started through two pivotal experiences. First, I was enrolled in a mandatory technology literacy class
+in my High School that assigned a project of programming a game in Scratch as a sort of final project. Being the zealous
+teen that I was, I decided that I was going to be cooler than everyone else and write the game in Python instead of Scratch.
+I used the Pygame framework to create the first example app that made it hard to understand how the framework worked. It
+was the most disgusting code I have ever written, but it worked, and that game had me hooked. It was difficult
+but was the canon event that all programmers experience defined by frustration and an intense sense of accomplishment at it&#x27;s
+completion. As you can tell by now I tend to get obsessed with my interests and programming was no different. I started
+learning on my own and building crappy apps, playing with [Raspberry Pis] and tinkering in general, bringing me to my next
+pivotal experience. Covid-19 shut down my school in the late months of 2019 allowing me plenty of time to do whatever the
+hell I wanted. Although Covid was a tragic time for many people with families experiencing loss of grandparents, parents,
+and time spent together, it was an incredible opportunity for me to hone my craft. I would play guitar for hours and then
+do some programming. This is when I decided to build my own PC. Everyone and their mom decided to build a desktop around
+that time due to all the remote work, but I somehow got in early enough to maintain some of the funds in my piggy bank.&lt;&#x2F;p&gt;
+&lt;p&gt;Around my Sophomore year of high school I switched to Linux where I started with Ubuntu. I distro-hopped for a while experimenting
+with Arch, Manjaro, and OpenSuse. I eventually settled on Manjaro for a while because I was not savvy enough to manage my
+operating system but arrogant (insecure?) enough to need something to brag about. Yes I know it isn&#x27;t the same as Arch. This
+continued as I messed around with Raspberry Pis and learned the command line. I believe that my switch to Linux solidified my
+interest in programming and provided me with an environment that made programming enjoyable and fun.&lt;&#x2F;p&gt;
+&lt;p&gt;I started taking programming classes in my High School where I exceled due to my existing experience and even worked for our
+school&#x27;s IT help desk where I assisted other students in diagnosing issues with their laptops. This also earned me some
+fancy-schmancy administrator priviledges that let me install programming software and music-related tools like Axe-Edit
+on my school laptop. There were definitely some days where I paid far more attention to a program I was writing than whatever
+class I was in.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;other-interests&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#other-interests&quot; aria-label=&quot;Anchor link for: other-interests&quot;&gt;Other Interests&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Whenever Wintertime rolls around I have my annual desire to become an X-Games level snowboarder. I started my winter sports
+journey as a skiier where became the fastest moving object&#x2F;toddler on the mountain (Pizza is for losers). Eventually, I
+decided to give snowboarding a try. I have never looked back and still love taking a few days during the winter to hit the
+local hills or even take a trip out west.&lt;&#x2F;p&gt;
+&lt;p&gt;I have been playing soccer since I was almost 4 years old. I played park district soccer, then club, and for my high school
+team as well. Although it was never my primary interest, it became a hell of a lot more fun when I started lifting weights,
+another hobby of mine. Not to say I am that muscular, but soccer players tend to have a very lean build that does not lend well
+to a 180 lb aggressive high-schooler. When I was younger I was not the biggest fan of soccer but I am glad I stayed involved
+as it kept me in shape and gives me a fun activity at University with Intramural Soccer.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
