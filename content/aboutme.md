@@ -5,7 +5,7 @@ date = 2025-06-14
 toc = true
 +++
 # Who Am I?
-My name is Matt Marsico. I am a musician, programmer, and nerd. My interests span across technology, music, fitness, and more.
+My name is Matt Marsico. I am a musician, programmer, and hobbyist. My interests span across technology, music, fitness, and more.
 
 ## Music
 ### The Beginning
