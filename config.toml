@@ -60,7 +60,7 @@ theme = "toggle" # options: {light, dark, auto, toggle}
 favicon = true
 
 # Giscus comment support
-comments = false
-giscus_repo = "micahkepe/radion"
-giscus_repo_id = "R_kgDONK7lCQ"
-giscus_data_category_id = "DIC_kwDONK7lCc4CnfXf"
+comments = true
+giscus_repo = "mattmars3/mattmarsico.com"
+giscus_repo_id = "R_kgDOPoyk5A"
+giscus_data_category_id = "DIC_kwDOPoyk5M4Cu8N3"
