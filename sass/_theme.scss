@@ -300,3 +300,17 @@ article [itemprop="summary"] p {
 .top-tracks-item p {
   text-align: center;
 }
+
+.cover-collage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.cover-collage img {
+
+  width: 30%;
+  height: 100%;
+  object-fit: cover;
+}
+
