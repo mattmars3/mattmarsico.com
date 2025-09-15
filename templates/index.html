@@ -205,6 +205,9 @@
     <main>
       {% if config.extra.radion_title %}
       <header><h1>{{ config.extra.radion_title }}</h1></header>
+
+      <!-- <img id="cover-picture" src="images/guitarwithcrowd.jpg" alt="(Me playing guitar for my senior year concert)" /> -->
+
       {% endif %} {% for page in paginator.pages %} {{
       post_macros::page_in_list(page=page) }} {% endfor %}
 
