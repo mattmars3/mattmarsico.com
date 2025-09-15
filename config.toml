@@ -1,7 +1,7 @@
 base_url = "https://mattmarsico.com"
 compile_sass = true
 title = "Matt Marsico's Portfolio"
-description = "A elegant light and dark theme for Zola"
+description = "A compilation of all of my interests and snapshot into my life"
 generate_feeds = true
 
 taxonomies = [

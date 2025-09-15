@@ -119,6 +119,7 @@
 
   <body class="hack dark main container">
     {% block content %} {% block header %} {% if config.extra.radion_menu %}
+
     <header class="nav-header">
       <nav
         itemscope
@@ -205,12 +206,6 @@
     <main>
       {% if config.extra.radion_title %}
       <header><h1>{{ config.extra.radion_title }}</h1></header>
-
-      <div class="cover-collage">
-        <img src="images/IMG_2196.JPG" alt="(Intramural Soccer Champions!)"  />
-        <img src="images/guitarwithcrowd.jpg" alt="(Me playing guitar for my senior year concert)" />
-        <img src="images/snowboarding.jpeg" alt="(Me snowboarding)" />
-      </div>
 
       {% endif %} {% for page in paginator.pages %} {{
       post_macros::page_in_list(page=page) }} {% endfor %}

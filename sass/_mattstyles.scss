@@ -1,8 +1,13 @@
-#cover-picture {
-  width: 40%;
+.cover-collage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.cover-collage img {
+
+  width: 30%;
   height: 100%;
   object-fit: cover;
-  
-  display: block;
-  margin-inline: auto;
 }
+
