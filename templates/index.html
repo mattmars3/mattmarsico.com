@@ -216,11 +216,11 @@
       <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.7/dist/htmx.min.js" integrity="sha384-ZBXiYtYQ6hJ2Y0ZNoYuI+Nq5MqWBr+chMrS/RkXpNzQCApHEhOt2aY8EJgqwHLkJ" crossorigin="anonymous"></script>
       <!-- Spotify Top Songs -->
       <div 
-        hx-get="/api/top-tracks"
+        hx-get="https://mattmarsico.com/api/top-tracks"
         hx-trigger="load"
         hx-swap="outerHTML"
-        <p>Loading top tracks...</p>
-      ></div>
+      ><p>Loading top tracks...</p>
+      </div>
 
       {% endif %} {% for page in paginator.pages %} {{
       post_macros::page_in_list(page=page) }} {% endfor %}
