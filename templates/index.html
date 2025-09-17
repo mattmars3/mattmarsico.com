@@ -213,6 +213,7 @@
         <img src="images/snowboarding.jpeg" alt="(Me snowboarding)" />
       </div>
 
+      <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.7/dist/htmx.min.js" integrity="sha384-ZBXiYtYQ6hJ2Y0ZNoYuI+Nq5MqWBr+chMrS/RkXpNzQCApHEhOt2aY8EJgqwHLkJ" crossorigin="anonymous"></script>
       <!-- Spotify Top Songs -->
       <div 
         hx-get="/api/top-tracks"
@@ -247,8 +248,6 @@
     <script defer src="{{ get_url(path='js/toggle-theme.js', trailing_slash=false) | safe }}"></script>
     {% endif %} {% include "partials/latex.html" %} {% include
     "partials/search.html" %} {% endblock scripts %}
-
-    <script defer src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.7/dist/htmx.min.js" integrity="sha384-ZBXiYtYQ6hJ2Y0ZNoYuI+Nq5MqWBr+chMrS/RkXpNzQCApHEhOt2aY8EJgqwHLkJ" crossorigin="anonymous"></script>
 
   </body>
 </html>
