@@ -302,3 +302,8 @@ article [itemprop="summary"] p {
 .top-songs-item img {
   width: 90%;
 }
+
+.top-songs-item {
+  display: flex;
+  flex-direction: column;
+}
