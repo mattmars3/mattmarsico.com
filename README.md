@@ -6,3 +6,4 @@ some other widgets with [htmx](https://htmx.org/).
 
 ## Deep Dive Architecture
 For hosting this portfolio site, I chose Cloudflare. It is much more straightforward to deploy simple applications to Cloudflare and I like their free plan.
+
