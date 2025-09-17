@@ -206,11 +206,20 @@
       {% if config.extra.radion_title %}
       <header><h1>{{ config.extra.radion_title }}</h1></header>
 
+      <!-- Homepage collage of pictures -->
       <div class="cover-collage">
         <img src="images/IMG_2196.JPG" alt="(Intramural Soccer Champions!)"  />
         <img src="images/guitarwithcrowd.jpg" alt="(Me playing guitar for my senior year concert)" />
         <img src="images/snowboarding.jpeg" alt="(Me snowboarding)" />
       </div>
+
+      <!-- Spotify Top Songs -->
+      <div 
+        hx-get="/api/top-tracks"
+        hx-trigger="load"
+        hx-swap="outerHTML"
+        <p>Loading top tracks...</p>
+      ></div>
 
       {% endif %} {% for page in paginator.pages %} {{
       post_macros::page_in_list(page=page) }} {% endfor %}
@@ -239,8 +248,7 @@
     {% endif %} {% include "partials/latex.html" %} {% include
     "partials/search.html" %} {% endblock scripts %}
 
-    <!-- htmx -->
-    <script defer src="https://unpkg.com/htmx.org@2.0.4"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.7/dist/htmx.min.js" integrity="sha384-ZBXiYtYQ6hJ2Y0ZNoYuI+Nq5MqWBr+chMrS/RkXpNzQCApHEhOt2aY8EJgqwHLkJ" crossorigin="anonymous"></script>
 
   </body>
 </html>

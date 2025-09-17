@@ -209,11 +209,20 @@
       
       <header><h1>Matt Marsico&#x27;s Personal Website</h1></header>
 
+      <!-- Homepage collage of pictures -->
       <div class="cover-collage">
         <img src="images/IMG_2196.JPG" alt="(Intramural Soccer Champions!)"  />
         <img src="images/guitarwithcrowd.jpg" alt="(Me playing guitar for my senior year concert)" />
         <img src="images/snowboarding.jpeg" alt="(Me snowboarding)" />
       </div>
+
+      <!-- Spotify Top Songs -->
+      <div 
+        hx-get="/api/top-tracks"
+        hx-trigger="load"
+        hx-swap="outerHTML"
+        <p>Loading top tracks...</p>
+      ></div>
 
         
     <article itemscope itemtype="http://schema.org/CreativeWork">
@@ -272,8 +281,7 @@
 <script type="text/javascript" src="https://mattmarsico.com/js/search.js"></script>
  
 
-    <!-- htmx -->
-    <script defer src="https://unpkg.com/htmx.org@2.0.4"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.7/dist/htmx.min.js" integrity="sha384-ZBXiYtYQ6hJ2Y0ZNoYuI+Nq5MqWBr+chMrS/RkXpNzQCApHEhOt2aY8EJgqwHLkJ" crossorigin="anonymous"></script>
 
   </body>
 </html>
