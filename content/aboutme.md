@@ -15,21 +15,24 @@ at my uncle's house in May of 2014. American Idiot by Green Day was the first so
 Not a week after that I ordered my first guitar which was a short scale length
 [Squire Mini Stratocaster](https://www.fender.com/products/mini-stratocaster) which was delivered on June 6, 2014.
 I was self-taught for the first two years of my guitar-playing journey. I learned through Rocksmith which was
-a surprisingly good resource for getting started. I say surprisingly loosly because it is literally designed to
-be used as a learning tool but it is also a video game.
+a surprisingly good resource for getting started. I say surprisingly because it was a video game, but it was also designed to
+be used as a learning tool.
 
 ### School of Rock
 I started taking lessons at School of Rock in 2016, and my first show was Cheap Trick and Aerosmith. The program handled
 the booking of shows, song selection, and gear. It was a great way to get into performing and allowed me to connect
 with other music-minded individuals. I then went on to perform in a variety of other shows like Glam Rock, Led Zeppelin,
 Riot Fest, The Who, The Beatles, British Invasion, Pink Floyd, and Rush. I also joined the House Band which was a more
-experienced group of musicians that played shows a few times a month. 
+experienced group of musicians that played multiple shows a month. 
 
 The setlists were so varied I can hardly remember half of the songs we played, but it was an incredible introduction
 to music of the past and present and allowed me to discover other bands through my friends there. With professional
-teachers I learned quickly and even played at places like [Summerfest](https://www.summerfest.com/) in Milwaukee.
+teachers I learned quickly and even played at places like [Summerfest](https://www.summerfest.com/) in Milwaukee, 
+[Lincoln Hall](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FD8govzoW4AAWE0P.jpg&f=1&nofb=1&ipt=d772c42cb1b865f5eb8e5f656fc9391b1206bf92988c5122ffaac5ea2b444203)
+ and [Reggies](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FGr0FtTeRKYw%2Fmaxresdefault.jpg&f=1&nofb=1&ipt=a773faca0312805b7620c415ecf255c071e95af02e9f495ae6fae44bda2c5126)
+in Chicago, and many more.
 
-<img src="images/IMG_6550.JPG" alt="Young Matt Performing" class="article-image" />
+<img src="https://mattmarsico.com/images/IMG_6550.JPG" alt="Young Matt Performing" class="article-image" />
 
 ### High School
 High School was a change as it always is and I was extremely excited to look into our school's Rock Band. It is
@@ -48,6 +51,8 @@ a leadership role in the band. I started creating setlists and organizing rehear
 of my role and stay humble - a difficult task for a high school guitarist. Both my Freshman and Junior years of high school  
 we even played at Disney World and Universal Studios. I still need to find the video of me playing a guitar solo at night
 on the Disney Springs Waterside Stage with the Hard Rock Cafe Volcano erupting in the background.
+
+<img src="https://mattmarsico.com/images/2023-05-12 22-15-08.jpeg" class="article-image"/>
 
 ## Programming
 ### The Beginning (Again)
@@ -79,7 +84,7 @@ class I was in.
 
 ## Other Interests
 Whenever Wintertime rolls around I have my annual desire to become an X-Games level snowboarder. I started my winter sports
-journey as a skiier where became the fastest moving object/toddler on the mountain (Pizza is for losers). Eventually, I 
+journey as a skiier where I became the fastest moving object/toddler on the mountain (Pizza stop is for losers). Eventually, I 
 decided to give snowboarding a try. I have never looked back and still love taking a few days during the winter to hit the
 local hills or even take a trip out west. 
 
