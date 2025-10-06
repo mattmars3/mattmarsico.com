@@ -1,5 +1,3 @@
-{% import "post_macros.html" as post_macros %}
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,97 +7,87 @@
     <!-- Enable responsiveness on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    {% if page and page.description %}
-    <meta name="description" content="{{ page.description }}" />
-    <meta property="og:description" content="{{ page.description }}" />
-    <meta property="twitter:description" content="{{ page.description }}" />
-    {% elif page and page.summary %}
-    {% set content_desc = page.summary | striptags %}
-    <meta name="description" content="{{ content_desc }}" />
-    <meta property="og:description" content="{{ content_desc }}" />
-    <meta property="twitter:description" content="{{ content_desc }}" />
-    {% elif config.description %}
-    <meta name="description" content="{{ config.description }}" />
-    <meta property="og:description" content="{{ config.description }}" />
-    <meta property="twitter:description" content="{{ config.description }}" />
-    {% endif %}
+    
+    <meta name="description" content="A compilation of all of my interests and snapshot into my life" />
+    <meta property="og:description" content="A compilation of all of my interests and snapshot into my life" />
+    <meta property="twitter:description" content="A compilation of all of my interests and snapshot into my life" />
+    
 
     <!-- Title -->
-    {% if page and page.title %} {% set title = page.title %} {% else %} {% set
-    title = config.title %} {% endif %}
+      
 
-    <title>{% block title %} {{ title }} {% endblock title %}</title>
+    <title> Matt Marsico&#x27;s Portfolio </title>
 
     <!-- Additional Facebook Meta Tags -->
     <meta
       property="og:url"
-      content="{% if page %}{{ page.permalink }}{% else %}{{ config.base_url }}{% endif %}"
+      content="https:&#x2F;&#x2F;mattmarsico.com"
     />
     <meta
       property="og:type"
-      content="{% if page %}article{% else %}website{% endif %}"
+      content="website"
     />
-    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:title" content="Matt Marsico&#x27;s Portfolio" />
     <meta
       property="og:image"
-      content="{{ config.base_url }}/icons/favicon/web-app-manifest-512x512.png"
+      content="https:&#x2F;&#x2F;mattmarsico.com/icons/favicon/web-app-manifest-512x512.png"
     />
 
     <!-- Additional Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       property="twitter:url"
-      content="{% if page %}{{ page.permalink }}{% else %}{{ config.base_url }}{% endif %}"
+      content="https:&#x2F;&#x2F;mattmarsico.com"
     />
-    <meta name="twitter:title" content="{{ title }}" />
+    <meta name="twitter:title" content="Matt Marsico&#x27;s Portfolio" />
     <meta
       name="twitter:image"
-      content="{{ config.base_url }}/icons/favicon/web-app-manifest-512x512.png"
+      content="https:&#x2F;&#x2F;mattmarsico.com/icons/favicon/web-app-manifest-512x512.png"
     />
 
     <!-- Favicons -->
-    {% if config.extra.favicon | default (value="true") %}
+    
     <link
       rel="icon"
       type="image/png"
-      href="{{ config.base_url }}/icons/favicon/favicon-96x96.png"
+      href="https:&#x2F;&#x2F;mattmarsico.com/icons/favicon/favicon-96x96.png"
       sizes="96x96"
     />
     <link
       rel="icon"
       type="image/svg+xml"
-      href="{{ config.base_url }}/icons/favicon/favicon.svg"
+      href="https:&#x2F;&#x2F;mattmarsico.com/icons/favicon/favicon.svg"
     />
     <link
       rel="shortcut icon"
-      href="{{ config.base_url }}/icons/favicon/favicon.ico"
+      href="https:&#x2F;&#x2F;mattmarsico.com/icons/favicon/favicon.ico"
     />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="{{ config.base_url }}/icons/favicon/apple-touch-icon.png"
+      href="https:&#x2F;&#x2F;mattmarsico.com/icons/favicon/apple-touch-icon.png"
     />
-    <meta name="apple-mobile-web-app-title" content="{{ title }}" />
+    <meta name="apple-mobile-web-app-title" content="Matt Marsico&#x27;s Portfolio" />
     <link
       rel="manifest"
-      href="{{ config.base_url }}/icons/favicon/site.webmanifest"
+      href="https:&#x2F;&#x2F;mattmarsico.com/icons/favicon/site.webmanifest"
     />
-    {% endif %}
+    
 
     <!-- RSS Feed -->
-    {% if config.generate_feeds %}
+    
     <link
       rel="alternate"
       type="application/atom+xml"
       title="RSS"
-      href="{{ get_url(path='atom.xml') | safe }}"
+      href="https://mattmarsico.com/atom.xml"
     />
-    {% endif %}
+    
 
     <!-- Load Styles -->
     <link
       rel="stylesheet"
-      href="{{ get_url(path='site.css', trailing_slash=false) | safe }}"
+      href="https://mattmarsico.com/site.css"
     />
 
     <!-- Google Fonts -->
@@ -110,15 +98,15 @@
     <!-- Pass Theme Preference as Data Attribute -->
     <script>
       document.documentElement.dataset.theme =
-        "{{ config.extra.theme | default(value='toggle') }}";
+        "toggle";
     </script>
 
     <!-- Reference return to click position script -->
-    <script defer src="{{ get_url(path='js/reference-return.js', trailing_slash=false) | safe }}"></script>
+    <script defer src="https://mattmarsico.com/js/reference-return.js"></script>
   </head>
 
   <body class="hack dark main container">
-    {% block content %} {% block header %} {% if config.extra.radion_menu %}
+      
     <header class="nav-header">
       <nav
         itemscope
@@ -126,19 +114,35 @@
         class="navbar"
       >
         <section class="nav-links">
-          {% for item in config.extra.radion_menu %}
+          
           <a
             itemprop="url"
-            class="{% if item.url | replace(from='$BASE_URL', to=config.base_url) == current_url %}active{% endif %}"
-            href="{{ item.url | safe | replace(from='$BASE_URL', to=config.base_url) | safe }}"
+            class="active"
+            href="https://mattmarsico.com/"
           >
-            <span itemprop="name">{{ item.name }}</span>
+            <span itemprop="name">Home</span>
           </a>
-          {% endfor %}
+          
+          <a
+            itemprop="url"
+            class=""
+            href="https://mattmarsico.com/blog"
+          >
+            <span itemprop="name">Blog</span>
+          </a>
+          
+          <a
+            itemprop="url"
+            class=""
+            href="https://mattmarsico.com/aboutme"
+          >
+            <span itemprop="name">About Me</span>
+          </a>
+          
         </section>
       </nav>
       <aside class="user-actions-container">
-        {% if config.extra.enable_search %}
+        
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -156,55 +160,54 @@
         <section class="search-results" aria-live="polite">
           <article class="search-results__items" role="list"></article>
         </section>
-        {% endif %} {% if config.extra.theme | default(value="toggle") ==
-        "toggle" %}
+         
         <a id="dark-mode-toggle" href="#">
           <img
-            src="{{ get_url(path='icons/sun.svg') }}"
+            src="https://mattmarsico.com/icons/sun.svg"
             id="sun-icon"
             style="filter: invert(1)"
             alt="Light mode"
           />
           <img
-            src="{{ get_url(path='icons/moon.svg') }}"
+            src="https://mattmarsico.com/icons/moon.svg"
             id="moon-icon"
             alt="Dark mode"
           />
         </a>
-        {% endif %} {% if config.generate_feeds %}
+         
         <a
-          href="{{ get_url(path='atom.xml') | safe }}"
+          href="https://mattmarsico.com/atom.xml"
           class="feed-icon"
           rel="noopener noreferrer"
         >
           <img
-            src="{{ get_url(path='icons/rss.svg') }}"
+            src="https://mattmarsico.com/icons/rss.svg"
             id="rss-icon"
             alt="RSS feed"
             class="social-icon"
           />
         </a>
-        {% endif %} {% if config.extra.github %}
+         
         <a
-          href="{{ config.extra.github }}"
+          href="https:&#x2F;&#x2F;github.com&#x2F;mattmars3"
           class="feed-icon"
           rel="noopener noreferrer"
         >
           <img
-            src="{{ get_url(path='icons/github.svg') }}"
+            src="https://mattmarsico.com/icons/github.svg"
             id="github-icon"
             alt="GitHub"
             class="social-icon"
           />
         </a>
-        {% endif %}
+        
       </aside>
     </header>
-    {% endif %} {% endblock header %}
+     
 
     <main>
-      {% if config.extra.radion_title %}
-      <header><h1>{{ config.extra.radion_title }}</h1></header>
+      
+      <header><h1>Matt Marsico&#x27;s Personal Website</h1></header>
 
       <!-- Homepage collage of pictures -->
       <div class="cover-collage">
@@ -222,24 +225,44 @@
       ><p>Loading top tracks...</p>
       </div>
 
-      {% endif %} {% for page in paginator.pages %} {{
-      post_macros::page_in_list(page=page) }} {% endfor %}
+        
+    <article itemscope itemtype="http://schema.org/CreativeWork">
+        <header>
+            <h2 itemprop="name">
+                <a href="https://mattmarsico.com/aboutme/">About Me</a>
+            </h2>
+            <data class="muted">
+    <svg class="icon i-clock" viewBox="0 0 32 32"
+         width="16" height="16" fill="none" stroke="currentcolor"
+         stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+        <circle cx="16" cy="16" r="14"/>
+        <path d="M16 8 L16 16 20 20"/>
+    </svg>
+    <data>8 minute read</data>
+    <svg class="icon i-edit" viewBox="0 0 32 32"
+         width="16" height="16" fill="none" stroke="currentcolor"
+         stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+        <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z"/>
+    </svg>
+
+    Published: 2025-06-14
+</data>
+        </header>
+        
+    </article>
+ 
 
       <nav aria-label="Pagination">
         <p>
-          {% if paginator.previous %}
-          <a href="{{ paginator.previous }}">&laquo; Previous</a> | {% endif %}
+          
           <span
-            >Page {{ paginator.current_index }} of {{ paginator.number_pagers
-            }}</span
+            >Page 1 of 1</span
           >
-          {% if paginator.next %} |
-          <a href="{{ paginator.next }}">Next &raquo;</a>
-          {% endif %}
+          
         </p>
       </nav>
     </main>
-    {% endblock content %}
+    
 
     <!-- <script src='https://unpkg.com/trianglify@^4/dist/trianglify.bundle.js'></script> -->
     <script>
@@ -260,12 +283,22 @@
 
 
     <!-- optional scripts -->
-    {% block scripts %} {% if config.extra.codeblock %}
-    <script defer src="{{ get_url(path='js/codeblock.js', trailing_slash=false) | safe }}"></script>
-    {% endif %} {% if config.extra.theme %}
-    <script defer src="{{ get_url(path='js/toggle-theme.js', trailing_slash=false) | safe }}"></script>
-    {% endif %} {% include "partials/latex.html" %} {% include
-    "partials/search.html" %} {% endblock scripts %}
+     
+    <script defer src="https://mattmarsico.com/js/codeblock.js"></script>
+     
+    <script defer src="https://mattmarsico.com/js/toggle-theme.js"></script>
+     
+<!-- MathJax script for rendering LaTeX math equations -->
+<script src="https://mattmarsico.com/js/mathjax-config.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+  async
+></script>
+
+ 
+<script type="text/javascript" src="https://mattmarsico.com/elasticlunr.min.js"></script>
+<script type="text/javascript" src="https://mattmarsico.com/js/search.js"></script>
+ 
 
   </body>
 </html>
