@@ -52,7 +52,7 @@ of my role and stay humble - a difficult task for a high school guitarist. Both 
 we even played at Disney World and Universal Studios. I still need to find the video of me playing a guitar solo at night
 on the Disney Springs Waterside Stage with the Hard Rock Cafe Volcano erupting in the background.
 
-<img src="https://mattmarsico.com/images/2023-05-12 22-15-08.jpeg" class="article-image"/>
+<img src="https://mattmarsico.com/images/2023-05-12-22-15-08.jpeg" class="article-image"/>
 
 ## Programming
 ### The Beginning (Again)
