@@ -1,8 +1,8 @@
 +++
-title = "Sports Betting Strategy"
+title = "Stats-Based Sports Betting Strategy"
 date = 2025-09-01
 +++
-# Sports Betting Strategy
+# Statistics-Based Sports Betting Strategy
 Sports betting goes back thousands of years and has long been a pastime for sports enthusiasts. 
 Unfortunately, it can turn into an addiction, or be the precursor to financial ruin for many individuals. 
 Recently, I have developed an interest in statistics-based sports betting. I compare it
