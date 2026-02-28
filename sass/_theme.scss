@@ -309,14 +309,27 @@ article [itemprop="summary"] p {
   align-items: center;
 }
 
-.quote-container {
+.quote-wrapper {
+  border: 1px dashed white;
+  margin: 1rem 0 1rem 0;
+}
 
+.quote-wrapper h1 {
+  text-align: center;
+}
+
+.quote-container {
+  padding: 1rem;
 }
 
 .quote-body {
-
+  font-size: 1.2rem;
+  font-style: italic;
 }
 
 .quote-attribution {
-
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
