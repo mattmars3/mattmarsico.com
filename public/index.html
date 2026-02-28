@@ -209,6 +209,9 @@
       
       <header><h1>Matt Marsico&#x27;s Personal Website</h1></header>
 
+      <!-- make sure to link in htmx -->
+      <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.7/dist/htmx.min.js" integrity="sha384-ZBXiYtYQ6hJ2Y0ZNoYuI+Nq5MqWBr+chMrS/RkXpNzQCApHEhOt2aY8EJgqwHLkJ" crossorigin="anonymous"></script>
+
       <!-- Homepage collage of pictures -->
       <div class="cover-collage">
         <img src="images/IMG_2196.JPG" alt="(Intramural Soccer Champions!)"  />
@@ -216,8 +219,71 @@
         <img src="images/snowboarding.jpeg" alt="(Me snowboarding)" />
       </div>
 
-      <!-- make sure to link in htmx -->
-      <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.7/dist/htmx.min.js" integrity="sha384-ZBXiYtYQ6hJ2Y0ZNoYuI+Nq5MqWBr+chMrS/RkXpNzQCApHEhOt2aY8EJgqwHLkJ" crossorigin="anonymous"></script>
+      <!-- <div class="guestbook"> -->
+      <!--   <div class="guestbook-entries" -->
+      <!--     hx-get="http://localhost:8787/api/guestbook?page=0" -->
+      <!--     hx-trigger="load"> -->
+      <!--     Loading guestbook... -->
+      <!--   </div> -->
+      <!-- </div> -->
+
+      <div class="guestbook">
+        <h1>Sign the Guestbook</h1>
+
+        <!-- SIGN FORM -->
+        <form
+          class="guestbook-form"
+          hx-post="api/guestbook/sign"
+          hx-target=".guestbook-entries"
+          hx-swap="afterbegin">
+
+          <input
+            type="text"
+            name="name"
+            placeholder="Your name"
+            required>
+
+          <textarea
+            name="message"
+            placeholder="Message"
+            required>
+          </textarea>
+
+          <button type="submit">
+            Sign
+          </button>
+
+        </form>
+
+        <div class="guestbook-entries"
+          hx-get=api/guestbook?page=0"
+          hx-trigger="load">
+          Loading guestbook...
+        </div>
+
+        <!---->
+        <!-- <div class="guestbook-entries"> -->
+        <!---->
+        <!--     <div class="guestbook-entry"> -->
+        <!--         <p class="guestbook-entry-name">john:</p> -->
+        <!--         <p class="guestbook-entry-message">test</p> -->
+        <!--         <p class="guestbook-entry-timestamp">2026-02-28 02:12:28</p> -->
+        <!--     </div> -->
+        <!---->
+        <!--     <div class="guestbook-entry"> -->
+        <!--         <p class="guestbook-entry-name">matt:</p> -->
+        <!--         <p class="guestbook-entry-message">hello</p> -->
+        <!--         <p class="guestbook-entry-timestamp">2026-02-28 02:04:31</p> -->
+        <!--     </div> -->
+        <!---->
+        <!--     <div -->
+        <!--       hx-get="http://localhost:8787/api/guestbook?page=1" -->
+        <!--       hx-trigger="revealed" -->
+        <!--       hx-swap="beforeend" -->
+        <!--       hx-target=".guestbook-entries"> -->
+        <!--     </div> -->
+            
+        </div></div>
 
       <div 
         hx-get="https://mattmarsico.com/api/quote"

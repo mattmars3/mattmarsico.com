@@ -333,3 +333,53 @@ article [itemprop="summary"] p {
   font-weight: bold;
   font-size: 1.2rem;
 }
+
+.guestbook {
+  border: 1px white dashed;
+  margin: 1rem 0 1rem 0;
+}
+
+.guestbook h1 {
+  text-align: center;
+}
+
+.guestbook-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.guestbook-entries {
+  padding: 1rem;
+}
+
+.guestbook-entry {
+  display: flex;
+  flex-direction: row;
+  gap: 0 1rem;
+  flex-wrap: wrap;
+
+  align-items: flex-end;
+
+  border-bottom: 0.5px gray dotted;
+  margin-bottom: 0.5rem;
+}
+
+.guestbook-entry p {
+  margin: 0;
+  padding: 0;
+}
+
+.guestbook-entry-name {
+  font-weight: bold;
+}
+
+.guestbook-entry-message {
+  font-style: italic;
+}
+
+.guestbook-entry-timestamp {
+  flex-basis: 100%;
+  align-self: flex-end;
+  text-align: right;
+  font-size: 0.8rem;
+}
