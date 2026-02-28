@@ -216,23 +216,17 @@
         <img src="images/snowboarding.jpeg" alt="(Me snowboarding)" />
       </div>
 
-      <!-- <div class="guestbook"> -->
-      <!--   <div class="guestbook-entries" -->
-      <!--     hx-get="http://localhost:8787/api/guestbook?page=0" -->
-      <!--     hx-trigger="load"> -->
-      <!--     Loading guestbook... -->
-      <!--   </div> -->
-      <!-- </div> -->
-
       <div class="guestbook">
+
         <h1>Sign the Guestbook</h1>
 
         <!-- SIGN FORM -->
         <form
           class="guestbook-form"
-          hx-post="api/guestbook/sign"
+          hx-post="/api/guestbook/sign"
           hx-target=".guestbook-entries"
-          hx-swap="afterbegin">
+          hx-swap="afterbegin"
+          hx-on::after-request="this.reset()">
 
           <input
             type="text"
@@ -243,8 +237,7 @@
           <textarea
             name="message"
             placeholder="Message"
-            required>
-          </textarea>
+            required></textarea>
 
           <button type="submit">
             Sign
@@ -252,35 +245,18 @@
 
         </form>
 
-        <div class="guestbook-entries"
-          hx-get=api/guestbook?page=0"
+
+        <!-- GUESTBOOK ENTRIES -->
+        <div
+          class="guestbook-entries"
+          hx-get="/api/guestbook?page=0"
           hx-trigger="load">
+
           Loading guestbook...
+
         </div>
 
-        <!---->
-        <!-- <div class="guestbook-entries"> -->
-        <!---->
-        <!--     <div class="guestbook-entry"> -->
-        <!--         <p class="guestbook-entry-name">john:</p> -->
-        <!--         <p class="guestbook-entry-message">test</p> -->
-        <!--         <p class="guestbook-entry-timestamp">2026-02-28 02:12:28</p> -->
-        <!--     </div> -->
-        <!---->
-        <!--     <div class="guestbook-entry"> -->
-        <!--         <p class="guestbook-entry-name">matt:</p> -->
-        <!--         <p class="guestbook-entry-message">hello</p> -->
-        <!--         <p class="guestbook-entry-timestamp">2026-02-28 02:04:31</p> -->
-        <!--     </div> -->
-        <!---->
-        <!--     <div -->
-        <!--       hx-get="http://localhost:8787/api/guestbook?page=1" -->
-        <!--       hx-trigger="revealed" -->
-        <!--       hx-swap="beforeend" -->
-        <!--       hx-target=".guestbook-entries"> -->
-        <!--     </div> -->
-            
-        </div></div>
+      </div>
 
       <div 
         hx-get="https://mattmarsico.com/api/quote"
@@ -288,18 +264,6 @@
         hx-swap="outerHTML"
       ><p>Loading a quote...</p>
       </div>
-
-      <!-- <div class="quote-wrapper"> -->
-      <!--   <h1>Some Quotes I Like</h1> -->
-      <!--   <div class="quote-container"> -->
-      <!--     <p class="quote-body"> -->
-      <!--       When the light comes big and bright, I began another life -->
-      <!--     </p> -->
-      <!--     <p class="quote-attribution"> -->
-      <!--       Afterlife - Alex G -->
-      <!--     </p> -->
-      <!--   </div> -->
-      <!-- </div> -->
 
       <!-- Spotify Top Songs -->
       <div 
