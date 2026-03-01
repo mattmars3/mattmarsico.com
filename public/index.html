@@ -219,6 +219,22 @@
         <img src="images/snowboarding.jpeg" alt="(Me snowboarding)" />
       </div>
 
+      <!-- Spotify Top Songs -->
+      <div 
+        hx-get="https://mattmarsico.com/api/top-tracks"
+        hx-trigger="load"
+        hx-swap="outerHTML"
+      ><p>Loading top tracks...</p>
+      </div>
+
+      <!-- quotes widget -->
+      <div 
+        hx-get="https://mattmarsico.com/api/quote"
+        hx-trigger="load"
+        hx-swap="outerHTML"
+      ><p>Loading a quote...</p>
+      </div>
+
       <div class="guestbook">
 
         <h1>Sign the Guestbook</h1>
@@ -259,21 +275,6 @@
 
         </div>
 
-      </div>
-
-      <div 
-        hx-get="https://mattmarsico.com/api/quote"
-        hx-trigger="load"
-        hx-swap="outerHTML"
-      ><p>Loading a quote...</p>
-      </div>
-
-      <!-- Spotify Top Songs -->
-      <div 
-        hx-get="https://mattmarsico.com/api/top-tracks"
-        hx-trigger="load"
-        hx-swap="outerHTML"
-      ><p>Loading top tracks...</p>
       </div>
 
         
