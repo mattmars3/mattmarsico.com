@@ -343,11 +343,6 @@ article [itemprop="summary"] p {
   text-align: center;
 }
 
-.guestbook-form {
-  display: flex;
-  flex-direction: column;
-}
-
 .guestbook-entries {
   padding: 1rem;
 }
@@ -383,3 +378,53 @@ article [itemprop="summary"] p {
   text-align: right;
   font-size: 0.8rem;
 }
+
+.guestbook-form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.5rem;
+}
+
+.guestbook-form input,
+.guestbook-form textarea {
+  padding: 10px 12px;
+  font-size: 1rem;
+
+  border: 1px solid #ccc;
+  border-radius: 6px;
+
+  outline: none;
+
+  background-color: black;
+  color: white;
+	font-family: "JetBrains Mono",Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+	margin-bottom: 0.3rem;
+}
+
+/* Textarea sizing */
+.guestbook-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Focus effect */
+.guestbook-form input:focus,
+.guestbook-form textarea:focus {
+  border-color: red;
+  box-shadow: 0 0 0 2px #ff2e88;
+}
+
+/* Button */
+.guestbook-form button {
+  padding: 10px 16px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #b7005d;
+  color: white;
+
+  cursor: pointer;
+	font-family: "JetBrains Mono",Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+}
+
