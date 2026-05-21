@@ -428,3 +428,14 @@ article [itemprop="summary"] p {
 	font-family: "JetBrains Mono",Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
 }
 
+.gallery-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px 0;
+}
+
+.gallery-image {
+  width: 32%;
+}

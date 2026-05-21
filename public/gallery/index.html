@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <!-- Enable responsiveness on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    <meta name="description" content="A compilation of all of my interests and snapshot into my life" />
+    <meta property="og:description" content="A compilation of all of my interests and snapshot into my life" />
+    <meta property="twitter:description" content="A compilation of all of my interests and snapshot into my life" />
+    
+
+    <!-- Title -->
+      
+
+    <title>
+    
+    Gallery
+    
+</title>
+
+    <!-- Additional Facebook Meta Tags -->
+    <meta
+      property="og:url"
+      content="https:&#x2F;&#x2F;mattmarsico.com&#x2F;gallery&#x2F;"
+    />
+    <meta
+      property="og:type"
+      content="article"
+    />
+    <meta property="og:title" content="Gallery" />
+    <meta
+      property="og:image"
+      content="https:&#x2F;&#x2F;mattmarsico.com/icons/favicon/web-app-manifest-512x512.png"
+    />
+
+    <!-- Additional Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https:&#x2F;&#x2F;mattmarsico.com&#x2F;gallery&#x2F;"
+    />
+    <meta name="twitter:title" content="Gallery" />
+    <meta
+      name="twitter:image"
+      content="https:&#x2F;&#x2F;mattmarsico.com/icons/favicon/web-app-manifest-512x512.png"
+    />
+
+    <!-- Favicons -->
+    
+    <link
+      rel="icon"
+      type="image/png"
+      href="https:&#x2F;&#x2F;mattmarsico.com/icons/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https:&#x2F;&#x2F;mattmarsico.com/icons/favicon/favicon.svg"
+    />
+    <link
+      rel="shortcut icon"
+      href="https:&#x2F;&#x2F;mattmarsico.com/icons/favicon/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https:&#x2F;&#x2F;mattmarsico.com/icons/favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="Gallery" />
+    <link
+      rel="manifest"
+      href="https:&#x2F;&#x2F;mattmarsico.com/icons/favicon/site.webmanifest"
+    />
+    
+
+    <!-- RSS Feed -->
+    
+    <link
+      rel="alternate"
+      type="application/atom+xml"
+      title="RSS"
+      href="https://mattmarsico.com/atom.xml"
+    />
+    
+
+    <!-- Load Styles -->
+    <link
+      rel="stylesheet"
+      href="https://mattmarsico.com/site.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Pass Theme Preference as Data Attribute -->
+    <script>
+      document.documentElement.dataset.theme =
+        "toggle";
+    </script>
+
+    <!-- Reference return to click position script -->
+    <script defer src="https://mattmarsico.com/js/reference-return.js"></script>
+  </head>
+
+  <body class="hack dark main container cool-background">
+    
+    
+         
+    <header class="nav-header">
+      <nav
+        itemscope
+        itemtype="http://schema.org/SiteNavigationElement"
+        class="navbar"
+      >
+        <section class="nav-links">
+          
+          <a
+            itemprop="url"
+            class=""
+            href="https://mattmarsico.com/"
+          >
+            <span itemprop="name">Home</span>
+          </a>
+          
+          <a
+            itemprop="url"
+            class=""
+            href="https://mattmarsico.com/articles"
+          >
+            <span itemprop="name">Articles</span>
+          </a>
+          
+          <a
+            itemprop="url"
+            class=""
+            href="https://mattmarsico.com/aboutme"
+          >
+            <span itemprop="name">About Me</span>
+          </a>
+          
+          <a
+            itemprop="url"
+            class=""
+            href="https://mattmarsico.com/gallery"
+          >
+            <span itemprop="name">Gallery</span>
+          </a>
+          
+        </section>
+      </nav>
+      <aside class="user-actions-container">
+        
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          class="search-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+          />
+        </svg>
+        <input type="text" id="search" placeholder="Search..." />
+        <section class="search-results" aria-live="polite">
+          <article class="search-results__items" role="list"></article>
+        </section>
+         
+        <a id="dark-mode-toggle" href="#">
+          <img
+            src="https://mattmarsico.com/icons/sun.svg"
+            id="sun-icon"
+            style="filter: invert(1)"
+            alt="Light mode"
+          />
+          <img
+            src="https://mattmarsico.com/icons/moon.svg"
+            id="moon-icon"
+            alt="Dark mode"
+          />
+        </a>
+         
+        <a
+          href="https://mattmarsico.com/atom.xml"
+          class="feed-icon"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://mattmarsico.com/icons/rss.svg"
+            id="rss-icon"
+            alt="RSS feed"
+            class="social-icon"
+          />
+        </a>
+         
+        <a
+          href="https:&#x2F;&#x2F;github.com&#x2F;mattmars3"
+          class="feed-icon"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://mattmarsico.com/icons/github.svg"
+            id="github-icon"
+            alt="GitHub"
+            class="social-icon"
+          />
+        </a>
+        
+      </aside>
+    </header>
+     
+    
+
+<article itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+        <h1 itemprop="headline">Gallery</h1>
+        <data class="muted">
+    <svg class="icon i-clock" viewBox="0 0 32 32"
+         width="16" height="16" fill="none" stroke="currentcolor"
+         stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+        <circle cx="16" cy="16" r="14"/>
+        <path d="M16 8 L16 16 20 20"/>
+    </svg>
+    <data>3 minute read</data>
+    <svg class="icon i-edit" viewBox="0 0 32 32"
+         width="16" height="16" fill="none" stroke="currentcolor"
+         stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+        <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z"/>
+    </svg>
+
+    Published: 2025-06-14
+</data>
+    </header>
+
+    <article itemprop="articleBody">
+        
+            <!-- If no summary separate from content, just render content -->
+            <img src="https://mattmarsico.com/images/gallery/gallery_001.jpg" alt="gallery_001.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_003.jpg" alt="gallery_003.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_004.jpg" alt="gallery_004.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_005.jpg" alt="gallery_005.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_006.jpg" alt="gallery_006.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_007.jpg" alt="gallery_007.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_008.jpg" alt="gallery_008.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_009.jpg" alt="gallery_009.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_010.jpg" alt="gallery_010.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_011.jpg" alt="gallery_011.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_012.jpg" alt="gallery_012.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_013.jpg" alt="gallery_013.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_014.jpg" alt="gallery_014.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_015.jpg" alt="gallery_015.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_016.jpg" alt="gallery_016.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_017.jpg" alt="gallery_017.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_018.jpg" alt="gallery_018.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_019.jpg" alt="gallery_019.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_020.jpg" alt="gallery_020.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_021.jpg" alt="gallery_021.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_022.jpg" alt="gallery_022.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_023.jpg" alt="gallery_023.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_024.jpg" alt="gallery_024.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_025.jpg" alt="gallery_025.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_026.jpg" alt="gallery_026.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_027.jpg" alt="gallery_027.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_028.jpg" alt="gallery_028.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_029.jpg" alt="gallery_029.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_030.jpg" alt="gallery_030.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_031.jpg" alt="gallery_031.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_032.jpg" alt="gallery_032.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_033.jpg" alt="gallery_033.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_034.jpg" alt="gallery_034.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_035.jpg" alt="gallery_035.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_037.jpg" alt="gallery_037.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_038.jpg" alt="gallery_038.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_039.jpg" alt="gallery_039.jpg" class="gallery-image" />
+<img src="https://mattmarsico.com/images/gallery/gallery_040.jpg" alt="gallery_040.jpg" class="gallery-image" />
+
+        
+    </article>
+
+    <!-- Comment section -->
+    
+      
+        
+          <script
+  src="https://giscus.app/client.js"
+  data-repo="mattmars3&#x2F;mattmarsico.com"
+  data-repo-id="R_kgDOPoyk5A"
+  data-category="General"
+  data-category-id="DIC_kwDOPoyk5M4Cu8N3"
+  data-mapping="pathname"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="bottom"
+  data-theme="preferred_color_scheme"
+  data-lang="en"
+  data-loading="lazy"
+  crossorigin="anonymous"
+  async
+></script>
+
+        
+      
+    
+
+
+    
+        <footer>
+            <hr>
+            <p>
+                
+                    Published by Matt Marsico
+                
+                
+                
+            </p>
+            
+            
+        </footer>
+    
+</article>
+
+
+
+    <!-- <script src='https://unpkg.com/trianglify@^4/dist/trianglify.bundle.js'></script> -->
+    <script>
+      <!-- const bg = document.getElementsByClassName("cover-collage")[0]; -->
+      <!-- const pattern = trianglify({ -->
+      <!--   width: window.innerWidth, -->
+      <!--   height: window.innerHeight, -->
+      <!--   cellSize: 25, -->
+      <!--   variance: 0.75, -->
+      <!--   xColors: "Greys" -->
+      <!-- }) -->
+      <!-- bg.appendChild(pattern.toSVG()); -->
+      <!-- document.body.appendChild(pattern.toCanvas()) -->
+
+      <!-- console.log(pattern.toDataURL()); -->
+      <!-- bg.style.backgroundImage = `url(${pattern.toDataURL()})` -->
+    </script>
+
+
+    <!-- optional scripts -->
+     
+    <script defer src="https://mattmarsico.com/js/codeblock.js"></script>
+     
+    <script defer src="https://mattmarsico.com/js/toggle-theme.js"></script>
+     
+<!-- MathJax script for rendering LaTeX math equations -->
+<script src="https://mattmarsico.com/js/mathjax-config.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+  async
+></script>
+
+ 
+<script type="text/javascript" src="https://mattmarsico.com/elasticlunr.min.js"></script>
+<script type="text/javascript" src="https://mattmarsico.com/js/search.js"></script>
+ 
+
+  </body>
+</html>

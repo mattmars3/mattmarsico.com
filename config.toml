@@ -7,7 +7,7 @@ generate_feeds = true
 taxonomies = [
     {name = "categories", feed = true},
     {name = "tags", feed = true},
-    {name = "blog", feed = true},
+    {name = "articles", feed = true},
 ]
 
 # When set to "true", a search index is built from the pages and section
@@ -39,8 +39,9 @@ author = "Matt Marsico"
 github = "https://github.com/mattmars3"
 radion_menu = [
     {url = "$BASE_URL/", name = "Home"},
-    {url = "$BASE_URL/blog", name = "Blog"},
-    {url = "$BASE_URL/aboutme", name = "About Me"}
+    {url = "$BASE_URL/articles", name = "Articles"},
+    {url = "$BASE_URL/aboutme", name = "About Me"},
+    {url = "$BASE_URL/gallery", name = "Gallery"}
 ]
 radion_title = "Matt Marsico's Personal Website"
 
