@@ -22,7 +22,6 @@ date = 2025-06-14
 <img src="https://photos.mattmarsico.com/gallery/gallery_019.jpg" alt="gallery_019.jpg" class="gallery-image" />
 <img src="https://photos.mattmarsico.com/gallery/gallery_020.jpg" alt="gallery_020.jpg" class="gallery-image" />
 <img src="https://photos.mattmarsico.com/gallery/gallery_021.jpg" alt="gallery_021.jpg" class="gallery-image" />
-<img src="https://photos.mattmarsico.com/gallery/gallery_022.jpg" alt="gallery_022.jpg" class="gallery-image" />
 <img src="https://photos.mattmarsico.com/gallery/gallery_023.jpg" alt="gallery_023.jpg" class="gallery-image" />
 <img src="https://photos.mattmarsico.com/gallery/gallery_024.jpg" alt="gallery_024.jpg" class="gallery-image" />
 <img src="https://photos.mattmarsico.com/gallery/gallery_025.jpg" alt="gallery_025.jpg" class="gallery-image" />
