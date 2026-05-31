@@ -31,6 +31,9 @@ build_search_index = true
 # See "Internal links & deep linking" in the documentation for more information.
 insert_anchor_links = "heading"
 
+[markdown.highlighting]
+theme = "github-dark"
+
 [search]
 index_format = "elasticlunr_json"
 
@@ -55,7 +58,7 @@ latex = true
 enable_search = true
 
 # Light/Dark Mode set
-theme = "toggle" # options: {light, dark, auto, toggle}
+theme = "dark" # options: {light, dark, auto, toggle}
 
 # Whether to display favicon
 favicon = true
