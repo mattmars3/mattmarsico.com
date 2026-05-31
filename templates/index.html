@@ -1,7 +1,7 @@
 {% import "post_macros.html" as post_macros %}
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="cool-background">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -117,7 +117,7 @@
     <script defer src="{{ get_url(path='js/reference-return.js', trailing_slash=false) | safe }}"></script>
   </head>
 
-  <body class="hack dark main container cool-background">
+  <body class="hack dark main container">
     {% block content %} {% block header %} {% if config.extra.radion_menu %}
     <header class="nav-header">
       <nav

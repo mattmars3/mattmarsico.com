@@ -439,3 +439,10 @@ article [itemprop="summary"] p {
 .gallery-image {
   width: 32%;
 }
+
+.cool-background {
+  background-color: var(--cool-bg-dark);
+  background: radial-gradient(circle, transparent 20%, var(--cool-bg-dark) 20%, var(--cool-bg-dark) 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, var(--cool-bg-dark) 20%, var(--cool-bg-dark) 80%, transparent 80%, transparent) 25px 25px, linear-gradient(var(--cool-bg-accent) 2px, transparent 2px) 0 -1px, linear-gradient(90deg, var(--cool-bg-accent) 2px, var(--cool-bg-dark) 2px) -1px 0;
+  background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+}
+
