@@ -44,7 +44,7 @@ radion_menu = [
     {url = "$BASE_URL/", name = "Home"},
     {url = "$BASE_URL/articles", name = "Articles"},
     {url = "$BASE_URL/aboutme", name = "About Me"},
-    {url = "$BASE_URL/gallery", name = "Gallery"}
+    # {url = "$BASE_URL/gallery", name = "Gallery"}
 ]
 radion_title = "Matt Marsico's Personal Website"
 
