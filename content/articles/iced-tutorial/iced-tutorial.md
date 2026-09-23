@@ -1,5 +1,5 @@
 +++
-title = "Rust GUI Library - iced Tutorial"
+title = "iced - Introduction"
 date = 2026-09-22
 +++
 Hi, welcome to my tutorial on [iced](https://iced.rs/), a Rust GUI library that has been rising in popularity. I am currently building a music player

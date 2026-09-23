@@ -207,8 +207,15 @@
       {% if config.extra.radion_title %}
       <header><h1>{{ config.extra.radion_title }}</h1></header>
 
-      {% endif %} {% for page in paginator.pages %} {{
-      post_macros::page_in_list(page=page) }} {% endfor %}
+      {% endif %} 
+
+      {% for subsection_path in section.subsections %}
+        {{ post_macros::tree(section_path=subsection_path) }}
+      {% endfor %}
+
+      {% for page in paginator.pages %} {{
+        post_macros::page_in_list(page=page) }} 
+      {% endfor %}
 
       <nav aria-label="Pagination">
         <p>

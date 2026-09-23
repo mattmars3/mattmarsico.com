@@ -31,3 +31,22 @@
         {% endif %}
     </article>
 {% endmacro page_in_list %}
+
+{% macro tree(section_path) %}
+  {% set s = get_section(path=section_path) %}
+    <h2 itemprop="name">
+        <a href="{{ s.permalink | safe }}">{{ s.title }}</a>
+    </h2>
+  <li>
+    {% if s.subsections or s.pages %}
+      {% for sub in s.subsections %}
+        {{ self::tree(section_path=sub) }}
+      {% endfor %}
+      {% for page in s.pages %}
+        <h3>
+            <a href="{{ page.permalink }}">{{ page.title | default(value=page.slug) }}</a>
+        </h3>
+      {% endfor %}
+    {% endif %}
+  </li>
+{% endmacro tree %}

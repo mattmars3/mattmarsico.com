@@ -232,51 +232,6 @@
       ><p>Loading a quote...</p>
       </div>
 
-      <!-- <div class="guestbook"> -->
-      <!---->
-      <!--   <h1>Sign the Guestbook</h1> -->
-      <!---->
-      <!--   SIGN FORM --> 
-      <!--   <form -->
-      <!--     class="guestbook-form" -->
-      <!--     hx-post="/api/guestbook/sign" -->
-      <!--     hx-target=".guestbook-entries" -->
-      <!--     hx-swap="afterbegin" -->
-      <!--     hx-on::after-request="this.reset()"> -->
-      <!---->
-      <!--     <input -->
-      <!--       type="text" -->
-      <!--       name="name" -->
-      <!--       placeholder="Your name" -->
-      <!--       required> -->
-      <!---->
-      <!--     <textarea -->
-      <!--       name="message" -->
-      <!--       placeholder="Message" -->
-      <!--       required></textarea> -->
-      <!---->
-      <!--     <button type="submit"> -->
-      <!--       Sign -->
-      <!--     </button> -->
-      <!---->
-      <!--   </form> -->
-      <!---->
-      <!---->
-      <!--   GUESTBOOK ENTRIES --> 
-      <!--   <div -->
-      <!--     class="guestbook-entries" -->
-      <!--     hx-get="/api/guestbook?page=0" -->
-      <!--     hx-trigger="load"> -->
-      <!---->
-      <!--     Loading guestbook... -->
-      <!---->
-      <!--   </div> -->
-      <!---->
-      <!--   webring functionality -->
-      <!---->
-      <!---->
-      <!-- </div> -->
-
       {% endif %} {% for page in paginator.pages %} {{
       post_macros::page_in_list(page=page) }} {% endfor %}
 
@@ -295,24 +250,6 @@
       </nav>
     </main>
     {% endblock content %}
-
-    <!-- <script src='https://unpkg.com/trianglify@^4/dist/trianglify.bundle.js'></script> -->
-    <script>
-      <!-- const bg = document.getElementsByClassName("cover-collage")[0]; -->
-      <!-- const pattern = trianglify({ -->
-      <!--   width: window.innerWidth, -->
-      <!--   height: window.innerHeight, -->
-      <!--   cellSize: 25, -->
-      <!--   variance: 0.75, -->
-      <!--   xColors: "Greys" -->
-      <!-- }) -->
-      <!-- bg.appendChild(pattern.toSVG()); -->
-      <!-- document.body.appendChild(pattern.toCanvas()) -->
-
-      <!-- console.log(pattern.toDataURL()); -->
-      <!-- bg.style.backgroundImage = `url(${pattern.toDataURL()})` -->
-    </script>
-
 
     <!-- optional scripts -->
     {% block scripts %} {% if config.extra.codeblock %}
