@@ -1,0 +1,18 @@
+.article-image {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.cover-collage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.cover-collage img {
+  width: 30%;
+  height: 100%;
+  object-fit: cover;
+}

@@ -1,9 +1,7 @@
-# Sample radion configuration
-# See: https://www.getzola.org/documentation/getting-started/configuration/
-base_url = "https://micahkepe.com/radion"
+base_url = "https://mattmarsico.com"
 compile_sass = true
-title = "radion theme"
-description = "A elegant light and dark theme for Zola"
+title = "Matt Marsico's Portfolio"
+description = "A compilation of all of my interests and snapshot into my life"
 generate_feeds = true
 
 taxonomies = [
@@ -19,9 +17,12 @@ minify_html = true
 
 [markdown]
 bottom_footnotes = true
+
+# what does this mean?
 external_links_target_blank = true
 external_links_external = true
 external_links_no_referrer = true
+
 lazy_async_image = true
 github_alerts = true
 insert_anchor_links = "heading"
@@ -40,17 +41,17 @@ include_description = true
 include_content = true
 
 [extra]
-author = "Micah Kepe"
-github = "https://github.com/micahkepe/radion"
-fediverse.creator = "@username@my.instance.example.com"
-fediverse.rel_me = "https://my.instance.example.com/@username"
-mastodon = "https://my.instance.example.com/@username"
+author = "Matt Marsico"
+github = "https://github.com/mattmars3/mattmarsico.com"
+# fediverse.creator = "@username@my.instance.example.com"
+# fediverse.rel_me = "https://my.instance.example.com/@username"
+# mastodon = "https://my.instance.example.com/@username"
 radion_menu = [
     {url = "$BASE_URL/", name = "Home"},
-    {url = "$BASE_URL/categories", name = "Categories"},
-    {url = "$BASE_URL/tags", name = "Tags"},
+    {url = "$BASE_URL/articles", name = "Articles"},
+    {url = "$BASE_URL/aboutme", name = "About Me"},
 ]
-radion_title = "My Example Site"
+radion_title = "Matt Marsico's Personal Website"
 
 # Nicer codeblocks with copy to clipboard
 codeblock = true
@@ -69,10 +70,6 @@ favicon = true
 
 # Giscus comment support
 comments = true
-giscus_repo = "micahkepe/radion"
-giscus_repo_id = "R_kgDONK7lCQ"
-giscus_data_category_id = "DIC_kwDONK7lCc4CnfXf"
-
-# Post revision history
-revision_history = true
-blog_github_repo_url = "https://github.com/micahkepe/radion"
+giscus_repo = "mattmars3/mattmarsico.com"
+giscus_repo_id = "R_kgDOPoyk5A"
+giscus_data_category_id = "DIC_kwDOPoyk5M4Cu8N3"
