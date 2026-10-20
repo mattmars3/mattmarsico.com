@@ -63,7 +63,7 @@ latex = true
 enable_search = true
 
 # Light/Dark Mode set
-theme = "toggle" # options: {light, dark, auto, toggle}
+theme = "dark" # options: {light, dark, auto, toggle}
 
 # Whether to display favicon
 favicon = true

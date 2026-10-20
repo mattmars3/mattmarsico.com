@@ -1,0 +1,10 @@
+:root {
+  --cool-bg-dark: rgba(0,0,0,1);
+  --cool-bg-accent: #3F0B22;
+}
+
+.background-effect {
+  background-color: var(--cool-bg-dark);
+  background: radial-gradient(circle, transparent 20%, var(--cool-bg-dark) 20%, var(--cool-bg-dark) 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, var(--cool-bg-dark) 20%, var(--cool-bg-dark) 80%, transparent 80%, transparent) 25px 25px, linear-gradient(var(--cool-bg-accent) 2px, transparent 2px) 0 -1px, linear-gradient(90deg, var(--cool-bg-accent) 2px, var(--cool-bg-dark) 2px) -1px 0;
+  background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+}
