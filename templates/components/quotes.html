@@ -1,0 +1,8 @@
+{% component quotes() %}
+  <div 
+    hx-get="https://mattmarsico.com/api/quote"
+    hx-trigger="load"
+    hx-swap="outerHTML"
+  ><p>Loading a quote...</p>
+  </div>
+{% endcomponent quotes %}
