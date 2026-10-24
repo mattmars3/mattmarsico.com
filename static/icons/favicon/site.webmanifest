@@ -1,17 +1,34 @@
 {
-  "name": "radion",
-  "short_name": "radion",
+  "name": "mattmarsicodotcom",
+  "short_name": "Matt's Website",
   "icons": [
     {
-      "src": "/icons/favicon/web-app-manifest-192x192.png",
-      "sizes": "192x192",
+      "src": "/icons/favicon/favicon1024.png",
+      "sizes": "1024x1024",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "/icons/favicon/web-app-manifest-512x512.png",
+      "src": "/icons/favicon/favicon512.png",
       "sizes": "512x512",
       "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/favicon/favicon64.png",
+      "sizes": "64x64",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/favicon/favicon48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/favicon/favicon.png",
+      "type": "image/svg+xml",
       "purpose": "maskable"
     }
   ],

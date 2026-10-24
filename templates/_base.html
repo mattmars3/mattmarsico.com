@@ -61,7 +61,7 @@
     {% endif %}
 
     <!-- Cover images -->
-    {% set cover_image = config.base_url ~ "/icons/favicon/web-app-manifest-512x512.png" %}
+    {% set cover_image = config.base_url ~ "/icons/favicon/favicon1024.png" %}
     {% if page and page.extra.cover_image and page.assets %}
       {% for asset in page.assets %}
         {% if asset is ending_with(pat=page.extra.cover_image) %}
