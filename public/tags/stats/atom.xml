@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Matt Marsico&#39;s Portfolio - stats</title>
+    <subtitle>A compilation of all of my interests and snapshot into my life</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://mattmarsico.com/tags/stats/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://mattmarsico.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-09-01T00:00:00+00:00</updated>
+    <id>https://mattmarsico.com/tags/stats/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Stats-Based Sports Betting Strategy</title>
+        <published>2025-09-01T00:00:00+00:00</published>
+        <updated>2025-09-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>Unknown</name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://mattmarsico.com/sports-betting/"/>
+        <id>https://mattmarsico.com/sports-betting/</id>
+        
+        <content type="html" xml:base="https://mattmarsico.com/sports-betting/">&lt;h1 id=&quot;statistics-based-sports-betting-strategy&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#statistics-based-sports-betting-strategy&quot; aria-label=&quot;Anchor link for: statistics-based-sports-betting-strategy&quot;&gt;Statistics-Based Sports Betting Strategy&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Sports betting goes back thousands of years and has long been a pastime for sports enthusiasts.
+Unfortunately, it can turn into an addiction, or be the precursor to financial ruin for many individuals.
+Recently, I have developed an interest in statistics-based sports betting. I compare it
+to something like counting cards in a casino. Not illegal, but you will be limited very quickly when Vegas finds out.&lt;/p&gt;
+&lt;h2 id=&quot;sports-betting-vs-stock-market&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#sports-betting-vs-stock-market&quot; aria-label=&quot;Anchor link for: sports-betting-vs-stock-market&quot;&gt;Sports Betting vs. Stock Market&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Sports-betting has shocking similarity to the stock market
+in more ways than one. Both have strategies for winning, yet nobody knows the real result until it happens.&lt;/p&gt;
+&lt;p&gt;Since my focus as a developer is in the algorithmic side of either trading or betting, I noticed that many of
+the strategies for either market remain largely the same, with a common emphasis on statistics.&lt;/p&gt;
+&lt;p&gt;The reason I highlight this comparison is to explain that I am not just throwing money away, and that responsible or informed gambling can be equally profitable.
+I could also use this to poke fun at stockbrokers but I&#39;ll leave that to you. (Gamblers in suits)&lt;/p&gt;
+&lt;h2 id=&quot;statistics-in-sports-betting&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#statistics-in-sports-betting&quot; aria-label=&quot;Anchor link for: statistics-in-sports-betting&quot;&gt;Statistics in Sports Betting&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Now that I have mentioned that there &lt;em&gt;are&lt;/em&gt; strategies for applying stats in sports betting, I should probably explain what they are.&lt;/p&gt;
+&lt;p&gt;The fundamental concept for any type of wager is &lt;strong&gt;expected value&lt;/strong&gt;. If you have taken a stats class already I will remind you that it is
+a weighted average of all possible values of a random variable. If you have not taken a stats class, consider the following:&lt;/p&gt;
+&lt;p&gt;You are offered a bet on a fair coin flip. If it is heads, you win \$10. If it is tails, you lose \$5.
+You know that the probability of it being heads is 50% and tails is also 50%. You then multiply the
+probability of each outcome by the value obtained from that corresponding outcome. In this case:&lt;/p&gt;
+&lt;p&gt;$$ 0.5 \times $10 + 0.5 \times -$5 = $2.50 $$&lt;/p&gt;
+&lt;p&gt;This means that every time you play, you are expected to win \$2.50. If you played 100 times, you&#39;d expect about a \$250 profit in the long run.&lt;/p&gt;
+&lt;p&gt;Expected value is the backbone of smart sports betting. I will reference it many times in subsequent sections.&lt;/p&gt;
+&lt;h2 id=&quot;what-are-the-true-odds&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#what-are-the-true-odds&quot; aria-label=&quot;Anchor link for: what-are-the-true-odds&quot;&gt;What are the True Odds?&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Your next question may be, &quot;how can you get the &lt;em&gt;real&lt;/em&gt; probabilities of some type of sports bet?&quot;. The short answer is there is no answer. There will
+never be an exactly correct probability of a certain outcome. In practice, there are a variety of methods to developing a &lt;em&gt;fair&lt;/em&gt; line. I will outline a few.&lt;/p&gt;
+&lt;h3 id=&quot;consensus-line&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#consensus-line&quot; aria-label=&quot;Anchor link for: consensus-line&quot;&gt;Consensus Line&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;One approach you could take is to average all odds for a specific bet into an &quot;average&quot; line. This may give you a solid baseline for what most sportsbooks
+are asking for, but it is important to acknowledge two critical pieces of information. The first is that there are fewer oddsmakers than you realize. Often times
+sportsbooks will just react to an industry-standard oddsmaker, instead of determining a fair line themselves. The second is that some sportsbooks are better
+at setting fair odds than others.&lt;/p&gt;
+&lt;h3 id=&quot;sharp-vs-non-sharp-soft-sportsbooks&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#sharp-vs-non-sharp-soft-sportsbooks&quot; aria-label=&quot;Anchor link for: sharp-vs-non-sharp-soft-sportsbooks&quot;&gt;Sharp vs Non-Sharp / Soft Sportsbooks&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;You can often tell how good a sporstbook is at setting odds by how much they limit their users. A sportsbook like Pinnacle is referred to as &quot;sharp&quot;, because
+their lines are extremely competitive and they don&#39;t limit winning players. Think of a casino that does not kick you out for counting cards. They make their money
+through tiny margins in the odds called &quot;vig&quot;, so they have an advantage in the long run.&lt;/p&gt;
+&lt;p&gt;On the contrary, many sportsbooks cater to your average joe (not a professional gambler). In these cases, they will limit you if you start to win too much money.
+This is often because they are slower to adjust their lines or they focus more on entertainment than line accuracy.&lt;/p&gt;
+&lt;h3 id=&quot;sharp-sportsbook-consensus&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#sharp-sportsbook-consensus&quot; aria-label=&quot;Anchor link for: sharp-sportsbook-consensus&quot;&gt;Sharp Sportsbook Consensus&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;This brings me to another solution to finding the fair line - the sharp sportsbook consensus. Instead of averaging the lines of &lt;em&gt;all&lt;/em&gt; sportsbooks, you just average
+the most statistically-accurate books. This gives you a better representation of the true odds, because many sharp sportsbooks change their lines in response
+to small details about the game like whether the pitcher tweets about wrist pain before the game. This will likely be the best way to determine a fair line.&lt;/p&gt;
+&lt;p&gt;Now that you know where to get the data to determine a fair line, let&#39;s talk about how to actually calculate it.&lt;/p&gt;
+&lt;h2 id=&quot;odds-conversion-and-removing-vig&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#odds-conversion-and-removing-vig&quot; aria-label=&quot;Anchor link for: odds-conversion-and-removing-vig&quot;&gt;Odds Conversion and Removing Vig&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Remember vig? We need to get rid of that small margin to determine the true odds of the outcome. The odds that they give you &lt;em&gt;can&lt;/em&gt; be converted into percentages,
+but they will be skewed by vig, so we must remember to remove it. Consider the following example:&lt;/p&gt;
+&lt;p&gt;Using American Odds: Team A has a line of -130 and Team B has a line of +120.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt; is to convert the American Odds to their implied probabilities:&lt;/p&gt;
+&lt;p&gt;Team A (negative): $$ p = \frac{a}{a + 100} = \frac{130}{130 + 100} = 0.565217 $$
+Team B (positive): $$ p = \frac{100}{b + 100} = \frac{100}{120 + 100} = 0.454545 $$&lt;/p&gt;
+&lt;p&gt;If we sum these odds we notice that $ 0.565217 + 0.454545 = 1.019763 $. That extra few decimals over 1.0 is the vig.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt; is to remove this from our calculation. We accomplish this by &lt;em&gt;normalizing&lt;/em&gt; it to 100%.&lt;/p&gt;
+&lt;p&gt;$$ p_{fair^A} = 0.565217 / 1.019763 = 0.554264 = 55.4264\% $$
+$$ p_{fair^B} = 0.454545 / 1.019763 = 0.445736 = 44.5736\% $$&lt;/p&gt;
+&lt;p&gt;Congrats! You now have a probability of each outcome without the margin. You can now leverage this information in your future bets.&lt;/p&gt;
+&lt;h2 id=&quot;placing-the-bets-and-limitations&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#placing-the-bets-and-limitations&quot; aria-label=&quot;Anchor link for: placing-the-bets-and-limitations&quot;&gt;Placing the Bets and Limitations&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Now that you have an accurate probability of the outcomes, you can calculate the expected value and determine if you will face long-run success.
+However, there are a few roadblocks you will face.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Lines are recomputed often and can affect your calculations. Take care in confirming your calculations are still relevent when you place a slip.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you win too much, many sportsbooks will limit you. Beware of this and factor it into your strategy.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Some sportsbooks are softer in specific sports or markets. Do some research to find which ones may expose an edge for you.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You &lt;strong&gt;will&lt;/strong&gt; lose, have trust in the long-run effects. Many parlay strategies have around a 20% win rate. Winning 20% of the time does not sound
+great but you &lt;strong&gt;must&lt;/strong&gt; hold out, and you will have success over time.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Good luck and enjoy!&lt;/p&gt;
+</content>
+        
+    </entry>
+</feed>

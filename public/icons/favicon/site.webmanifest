@@ -1,0 +1,14 @@
+{
+  "name": "mattmarsicodotcom",
+  "short_name": "Matt's Website",
+  "icons": [
+    {
+      "src": "/icons/favicon/favicon.svg",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}

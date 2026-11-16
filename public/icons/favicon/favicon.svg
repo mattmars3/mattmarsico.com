@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1024mm"
+   height="1024mm"
+   viewBox="0 0 1024 1024"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   sodipodi:docname="favicon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     inkscape:zoom="0.25354609"
+     inkscape:cx="1808.3497"
+     inkscape:cy="1195.049"
+     inkscape:window-width="3828"
+     inkscape:window-height="2106"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="swatch8">
+      <stop
+         style="stop-color:#ca2727;stop-opacity:1;"
+         offset="0"
+         id="stop8" />
+      <stop
+         style="stop-color:#de8b58;stop-opacity:1;"
+         offset="1"
+         id="stop9" />
+    </linearGradient>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath52">
+      <path
+         id="path52"
+         style="stroke-width:0.1;stroke-linecap:square;paint-order:markers fill stroke;stop-color:#000000"
+         d="m -880.82767,-187.29769 h 1640.84 v 73.28155 h -1640.84 z" />
+    </clipPath>
+    <rect
+       x="358.9091"
+       y="244.53148"
+       width="3151.3008"
+       height="3845.4548"
+       id="rect1" />
+    <rect
+       x="358.90909"
+       y="244.53148"
+       width="2070.6294"
+       height="3119.7485"
+       id="rect1-2" />
+    <rect
+       x="358.90909"
+       y="244.53148"
+       width="2070.6294"
+       height="3119.7485"
+       id="rect1-6" />
+    <rect
+       x="358.90909"
+       y="244.53148"
+       width="2070.6294"
+       height="3119.7485"
+       id="rect1-7" />
+    <rect
+       x="358.90909"
+       y="244.53148"
+       width="2070.6294"
+       height="3119.7485"
+       id="rect1-1" />
+    <rect
+       x="358.90909"
+       y="244.53148"
+       width="3151.3008"
+       height="3845.4548"
+       id="rect1-75" />
+    <rect
+       x="358.90909"
+       y="244.53148"
+       width="3151.3008"
+       height="3845.4548"
+       id="rect1-12" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch8"
+       id="linearGradient8"
+       x1="154.46927"
+       y1="144.77254"
+       x2="866.31897"
+       y2="881.91449"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <rect
+     style="fill:url(#linearGradient8);stroke-width:0.264583"
+     id="rect2-2"
+     width="1024.7479"
+     height="1022.6609"
+     x="-1.9797504"
+     y="2.0130801" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       transform="matrix(0.38499089,0,0,0.30568326,-126.37687,-108.74018)"
+       id="text1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3333.33px;font-family:excalifont;-inkscape-font-specification:excalifont;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect1);display:inline;fill:#000000"
+       inkscape:label="tl-front"><tspan
+         x="358.9082"
+         y="3005.1106"
+         id="tspan2"><tspan
+           style="font-weight:bold"
+           id="tspan1">M</tspan></tspan></text>
+  </g>
+</svg>

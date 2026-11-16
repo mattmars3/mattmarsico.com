@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Matt Marsico&#39;s Portfolio</title>
+    <subtitle>A compilation of all of my interests and snapshot into my life</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://mattmarsico.com/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://mattmarsico.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2026-11-10T00:00:00+00:00</updated>
+    <id>https://mattmarsico.com/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Developer Resources</title>
+        <published>2026-11-10T00:00:00+00:00</published>
+        <updated>2026-11-10T00:00:00+00:00</updated>
+        
+        <author>
+          <name>Unknown</name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://mattmarsico.com/developer-resources/"/>
+        <id>https://mattmarsico.com/developer-resources/</id>
+        
+        <content type="html" xml:base="https://mattmarsico.com/developer-resources/">&lt;h1 id=&quot;developer-resources&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#developer-resources&quot; aria-label=&quot;Anchor link for: developer-resources&quot;&gt;Developer Resources&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Being a junior developer can be challenging; it can be the first time you are working on a large project or using a language at an advanced level.
+However, there is a massive amount of tribal knowledge that developers simply pick up with experience or by working on a specific team.
+I am putting this guide together to aggregate many beneficial guides, resources, and more that may not be included in your average CS curriculum.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note this will be continuously updated. Check-in every now and then to get the latest articles or resources!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://www.conventionalcommits.org/en/v1.0.0/&quot;&gt;Conventional Commits&lt;/a&gt; are a way to write smart git commit messages. Many
+projects use this convention, but even if they don&#39;t, you will at least have a template for structuring a commit message
+and following SemVer.&lt;/p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>ESP-IDF On Gentoo</title>
+        <published>2026-11-08T00:00:00+00:00</published>
+        <updated>2026-11-08T00:00:00+00:00</updated>
+        
+        <author>
+          <name>Unknown</name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://mattmarsico.com/esp-idf-gentoo/"/>
+        <id>https://mattmarsico.com/esp-idf-gentoo/</id>
+        
+        <content type="html" xml:base="https://mattmarsico.com/esp-idf-gentoo/">&lt;h1 id=&quot;esp-idf-installation-on-gentoo&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#esp-idf-installation-on-gentoo&quot; aria-label=&quot;Anchor link for: esp-idf-installation-on-gentoo&quot;&gt;ESP-IDF Installation on Gentoo&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;ESP-IDF is only officially supported on Debian &amp;amp; RHEL-based distros, so here is a guide to getting up-and-running with a manual installation on Gentoo.&lt;/p&gt;
+&lt;h2 id=&quot;install-dependencies&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#install-dependencies&quot; aria-label=&quot;Anchor link for: install-dependencies&quot;&gt;Install Dependencies&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Usually, EIM would install these dependencies for us on a supported platform, but in this case we must install (and later maintain) all dependencies manually.&lt;/p&gt;
+&lt;pre class=&quot;giallo z-l-code z-d-code&quot; &gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-4 z-d-16&quot;&gt;sudo&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt; emerge&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-19&quot;&gt; -&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-19&quot;&gt;-ask&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-19&quot;&gt; \&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt;  dev-vcs/git&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-19&quot;&gt; \&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt;  dev-lang/python&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-19&quot;&gt; \&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt;  dev-python/pip&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-19&quot;&gt; \&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt;  dev-build/cmake&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-19&quot;&gt; \&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt;  dev-build/ninja&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-19&quot;&gt; \&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt;  dev-util/ccache&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-19&quot;&gt; \&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt;  app-mobilephone/dfu-util&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-19&quot;&gt; \&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt;  dev-libs/libffi&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-19&quot;&gt; \&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt;  dev-libs/openssl&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-19&quot;&gt; \&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt;  dev-libs/libusb&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-19&quot;&gt; \&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt;  dev-build/flex&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-19&quot;&gt; \&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt;  sys-devel/bison&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-19&quot;&gt; \&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt;  dev-util/gperf&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;download-eim&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#download-eim&quot; aria-label=&quot;Anchor link for: download-eim&quot;&gt;Download EIM&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Navigate to the &lt;a rel=&quot;noopener noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://dl.espressif.com/dl/eim/&quot;&gt;download site for EIM&lt;/a&gt; (ESP-IDF Installation Manager).&lt;/p&gt;
+&lt;p&gt;Download a &lt;strong&gt;CLI Installer&lt;/strong&gt; that works for you, in this case I chose the x64 version &lt;em&gt;(eim-cli-linux-x64-v0.21.1.zip)&lt;/em&gt; since I don&#39;t need any sort of multilib support.&lt;/p&gt;
+&lt;p&gt;Once you have downloaded it, unzip it to get the statically-linked binary.&lt;/p&gt;
+&lt;pre class=&quot;giallo z-l-code z-d-code&quot; &gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-4 z-d-16&quot;&gt;unzip&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt; eim-cli-linux-x64-v&lt;/span&gt;&lt;span class=&quot;z-l-5 z-d-12 z-d-i&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt;.zip&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will reveal a file &lt;code&gt;eim-v0.xx.y&lt;/code&gt; as well as a symlink &lt;code&gt;eim&lt;/code&gt; that you can use to run the program.&lt;/p&gt;
+&lt;h2 id=&quot;install-the-devkit&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#install-the-devkit&quot; aria-label=&quot;Anchor link for: install-the-devkit&quot;&gt;Install the DevKit&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Now, use the &lt;code&gt;eim&lt;/code&gt; binary to install the toolkit. We can skip the prerequisites check since we have manually installed all dependencies.&lt;/p&gt;
+&lt;pre class=&quot;giallo z-l-code z-d-code&quot; &gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-4 z-d-16&quot;&gt;./eim&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt; install&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-19&quot;&gt; -&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-19&quot;&gt;-skip-prerequisites-check&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If anything goes wrong or dependencies are not installed, the tool is pretty verbose so it should explain what else needs to be installed. If successfully proceed to the next part.&lt;/p&gt;
+&lt;p&gt;During my installation, it failed to copy the OpenOCD rules so I had to do the following.&lt;/p&gt;
+&lt;pre class=&quot;giallo z-l-code z-d-code&quot; &gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-4 z-d-16&quot;&gt;sudo&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt; install&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-19&quot;&gt; -&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-19&quot;&gt;Dm644&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-19&quot;&gt; \&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt;  /home/&lt;/span&gt;&lt;span class=&quot;z-l-5&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;z-l-5&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;z-l-5 z-d-14 z-d-i&quot;&gt;USER&lt;/span&gt;&lt;span class=&quot;z-l-5&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt;/.espressif/tools/openocd-esp32/v0.12.0-esp32-20260703/openocd-esp32/share/openocd/contrib/60-openocd.rules&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-19&quot;&gt; \&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt;  /etc/udev/rules.d/60-openocd.rules&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-4 z-d-16&quot;&gt;sudo&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt; udevadm&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt; control&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-19&quot;&gt; -&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-19&quot;&gt;-reload-rules&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-4 z-d-16&quot;&gt;sudo&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt; udevadm&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt; trigger&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;source-the-environment&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#source-the-environment&quot; aria-label=&quot;Anchor link for: source-the-environment&quot;&gt;Source the environment&lt;/a&gt;&lt;/h2&gt;
+&lt;pre class=&quot;giallo z-l-code z-d-code&quot; &gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-3 z-l-i z-d-8 z-d-i&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;z-l-3 z-l-i z-d-8 z-d-i&quot;&gt; bash / zsh&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-6 z-d-18&quot;&gt;source&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-7&quot;&gt; &amp;quot;&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-7&quot;&gt;~/.espressif/tools/activate_idf_v6.1.sh&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-7&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-3 z-l-i z-d-8 z-d-i&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;z-l-3 z-l-i z-d-8 z-d-i&quot;&gt; fish&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-6 z-d-18&quot;&gt;source&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-7&quot;&gt; &amp;quot;&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-7&quot;&gt;~/.espressif/tools/activate_idf_v6.1.fish&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-7&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;usage&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#usage&quot; aria-label=&quot;Anchor link for: usage&quot;&gt;Usage&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Now, you should be ready to use the devkit. Check out the &lt;a rel=&quot;noopener noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/linux-macos-start-project.html&quot;&gt;guide to your first project&lt;/a&gt; on Espressif&#39;s website to get started.&lt;/p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Stats-Based Sports Betting Strategy</title>
+        <published>2025-09-01T00:00:00+00:00</published>
+        <updated>2025-09-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>Unknown</name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://mattmarsico.com/sports-betting/"/>
+        <id>https://mattmarsico.com/sports-betting/</id>
+        
+        <content type="html" xml:base="https://mattmarsico.com/sports-betting/">&lt;h1 id=&quot;statistics-based-sports-betting-strategy&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#statistics-based-sports-betting-strategy&quot; aria-label=&quot;Anchor link for: statistics-based-sports-betting-strategy&quot;&gt;Statistics-Based Sports Betting Strategy&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Sports betting goes back thousands of years and has long been a pastime for sports enthusiasts.
+Unfortunately, it can turn into an addiction, or be the precursor to financial ruin for many individuals.
+Recently, I have developed an interest in statistics-based sports betting. I compare it
+to something like counting cards in a casino. Not illegal, but you will be limited very quickly when Vegas finds out.&lt;/p&gt;
+&lt;h2 id=&quot;sports-betting-vs-stock-market&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#sports-betting-vs-stock-market&quot; aria-label=&quot;Anchor link for: sports-betting-vs-stock-market&quot;&gt;Sports Betting vs. Stock Market&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Sports-betting has shocking similarity to the stock market
+in more ways than one. Both have strategies for winning, yet nobody knows the real result until it happens.&lt;/p&gt;
+&lt;p&gt;Since my focus as a developer is in the algorithmic side of either trading or betting, I noticed that many of
+the strategies for either market remain largely the same, with a common emphasis on statistics.&lt;/p&gt;
+&lt;p&gt;The reason I highlight this comparison is to explain that I am not just throwing money away, and that responsible or informed gambling can be equally profitable.
+I could also use this to poke fun at stockbrokers but I&#39;ll leave that to you. (Gamblers in suits)&lt;/p&gt;
+&lt;h2 id=&quot;statistics-in-sports-betting&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#statistics-in-sports-betting&quot; aria-label=&quot;Anchor link for: statistics-in-sports-betting&quot;&gt;Statistics in Sports Betting&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Now that I have mentioned that there &lt;em&gt;are&lt;/em&gt; strategies for applying stats in sports betting, I should probably explain what they are.&lt;/p&gt;
+&lt;p&gt;The fundamental concept for any type of wager is &lt;strong&gt;expected value&lt;/strong&gt;. If you have taken a stats class already I will remind you that it is
+a weighted average of all possible values of a random variable. If you have not taken a stats class, consider the following:&lt;/p&gt;
+&lt;p&gt;You are offered a bet on a fair coin flip. If it is heads, you win \$10. If it is tails, you lose \$5.
+You know that the probability of it being heads is 50% and tails is also 50%. You then multiply the
+probability of each outcome by the value obtained from that corresponding outcome. In this case:&lt;/p&gt;
+&lt;p&gt;$$ 0.5 \times $10 + 0.5 \times -$5 = $2.50 $$&lt;/p&gt;
+&lt;p&gt;This means that every time you play, you are expected to win \$2.50. If you played 100 times, you&#39;d expect about a \$250 profit in the long run.&lt;/p&gt;
+&lt;p&gt;Expected value is the backbone of smart sports betting. I will reference it many times in subsequent sections.&lt;/p&gt;
+&lt;h2 id=&quot;what-are-the-true-odds&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#what-are-the-true-odds&quot; aria-label=&quot;Anchor link for: what-are-the-true-odds&quot;&gt;What are the True Odds?&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Your next question may be, &quot;how can you get the &lt;em&gt;real&lt;/em&gt; probabilities of some type of sports bet?&quot;. The short answer is there is no answer. There will
+never be an exactly correct probability of a certain outcome. In practice, there are a variety of methods to developing a &lt;em&gt;fair&lt;/em&gt; line. I will outline a few.&lt;/p&gt;
+&lt;h3 id=&quot;consensus-line&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#consensus-line&quot; aria-label=&quot;Anchor link for: consensus-line&quot;&gt;Consensus Line&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;One approach you could take is to average all odds for a specific bet into an &quot;average&quot; line. This may give you a solid baseline for what most sportsbooks
+are asking for, but it is important to acknowledge two critical pieces of information. The first is that there are fewer oddsmakers than you realize. Often times
+sportsbooks will just react to an industry-standard oddsmaker, instead of determining a fair line themselves. The second is that some sportsbooks are better
+at setting fair odds than others.&lt;/p&gt;
+&lt;h3 id=&quot;sharp-vs-non-sharp-soft-sportsbooks&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#sharp-vs-non-sharp-soft-sportsbooks&quot; aria-label=&quot;Anchor link for: sharp-vs-non-sharp-soft-sportsbooks&quot;&gt;Sharp vs Non-Sharp / Soft Sportsbooks&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;You can often tell how good a sporstbook is at setting odds by how much they limit their users. A sportsbook like Pinnacle is referred to as &quot;sharp&quot;, because
+their lines are extremely competitive and they don&#39;t limit winning players. Think of a casino that does not kick you out for counting cards. They make their money
+through tiny margins in the odds called &quot;vig&quot;, so they have an advantage in the long run.&lt;/p&gt;
+&lt;p&gt;On the contrary, many sportsbooks cater to your average joe (not a professional gambler). In these cases, they will limit you if you start to win too much money.
+This is often because they are slower to adjust their lines or they focus more on entertainment than line accuracy.&lt;/p&gt;
+&lt;h3 id=&quot;sharp-sportsbook-consensus&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#sharp-sportsbook-consensus&quot; aria-label=&quot;Anchor link for: sharp-sportsbook-consensus&quot;&gt;Sharp Sportsbook Consensus&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;This brings me to another solution to finding the fair line - the sharp sportsbook consensus. Instead of averaging the lines of &lt;em&gt;all&lt;/em&gt; sportsbooks, you just average
+the most statistically-accurate books. This gives you a better representation of the true odds, because many sharp sportsbooks change their lines in response
+to small details about the game like whether the pitcher tweets about wrist pain before the game. This will likely be the best way to determine a fair line.&lt;/p&gt;
+&lt;p&gt;Now that you know where to get the data to determine a fair line, let&#39;s talk about how to actually calculate it.&lt;/p&gt;
+&lt;h2 id=&quot;odds-conversion-and-removing-vig&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#odds-conversion-and-removing-vig&quot; aria-label=&quot;Anchor link for: odds-conversion-and-removing-vig&quot;&gt;Odds Conversion and Removing Vig&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Remember vig? We need to get rid of that small margin to determine the true odds of the outcome. The odds that they give you &lt;em&gt;can&lt;/em&gt; be converted into percentages,
+but they will be skewed by vig, so we must remember to remove it. Consider the following example:&lt;/p&gt;
+&lt;p&gt;Using American Odds: Team A has a line of -130 and Team B has a line of +120.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt; is to convert the American Odds to their implied probabilities:&lt;/p&gt;
+&lt;p&gt;Team A (negative): $$ p = \frac{a}{a + 100} = \frac{130}{130 + 100} = 0.565217 $$
+Team B (positive): $$ p = \frac{100}{b + 100} = \frac{100}{120 + 100} = 0.454545 $$&lt;/p&gt;
+&lt;p&gt;If we sum these odds we notice that $ 0.565217 + 0.454545 = 1.019763 $. That extra few decimals over 1.0 is the vig.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt; is to remove this from our calculation. We accomplish this by &lt;em&gt;normalizing&lt;/em&gt; it to 100%.&lt;/p&gt;
+&lt;p&gt;$$ p_{fair^A} = 0.565217 / 1.019763 = 0.554264 = 55.4264\% $$
+$$ p_{fair^B} = 0.454545 / 1.019763 = 0.445736 = 44.5736\% $$&lt;/p&gt;
+&lt;p&gt;Congrats! You now have a probability of each outcome without the margin. You can now leverage this information in your future bets.&lt;/p&gt;
+&lt;h2 id=&quot;placing-the-bets-and-limitations&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#placing-the-bets-and-limitations&quot; aria-label=&quot;Anchor link for: placing-the-bets-and-limitations&quot;&gt;Placing the Bets and Limitations&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Now that you have an accurate probability of the outcomes, you can calculate the expected value and determine if you will face long-run success.
+However, there are a few roadblocks you will face.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Lines are recomputed often and can affect your calculations. Take care in confirming your calculations are still relevent when you place a slip.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you win too much, many sportsbooks will limit you. Beware of this and factor it into your strategy.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Some sportsbooks are softer in specific sports or markets. Do some research to find which ones may expose an edge for you.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You &lt;strong&gt;will&lt;/strong&gt; lose, have trust in the long-run effects. Many parlay strategies have around a 20% win rate. Winning 20% of the time does not sound
+great but you &lt;strong&gt;must&lt;/strong&gt; hold out, and you will have success over time.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Good luck and enjoy!&lt;/p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>About Me</title>
+        <published>2025-06-14T00:00:00+00:00</published>
+        <updated>2025-06-14T00:00:00+00:00</updated>
+        
+        <author>
+          <name>Unknown</name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://mattmarsico.com/aboutme/"/>
+        <id>https://mattmarsico.com/aboutme/</id>
+        
+        <content type="html" xml:base="https://mattmarsico.com/aboutme/">&lt;h1 id=&quot;who-am-i&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#who-am-i&quot; aria-label=&quot;Anchor link for: who-am-i&quot;&gt;Who Am I?&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;My name is Matt Marsico. I am a musician, programmer, and hobbyist. My interests span across technology, music, fitness, camping, and more.&lt;/p&gt;
+&lt;h2 id=&quot;notice&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#notice&quot; aria-label=&quot;Anchor link for: notice&quot;&gt;NOTICE!&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;This page is currently being reworked. Story time will have to wait 😞&lt;/strong&gt;&lt;/p&gt;
+&lt;section
+  style=&quot;width: 100%; max-width: 100%; margin: 0 auto; text-align: center;&quot;&gt;
+  &lt;img src=&quot;https://mattmarsico.com/images/IMG_6550.JPG&quot;  alt=&quot;Young Matt Performing&quot; 
+    style=&quot;max-width: 100%; height: auto; display: inline-block;&quot;&gt;
+&lt;/section&gt;
+&lt;section
+  style=&quot;width: 100%; max-width: 100%; margin: 0 auto; text-align: center;&quot;&gt;
+  &lt;img src=&quot;https://mattmarsico.com/images/2023-05-12-22-15-08.jpeg&quot;  alt=&quot;Older Matt Performing&quot; 
+    style=&quot;max-width: 100%; height: auto; display: inline-block;&quot;&gt;
+&lt;/section&gt;
+</content>
+        
+    </entry>
+</feed>

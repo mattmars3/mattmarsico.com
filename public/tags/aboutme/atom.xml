@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Matt Marsico&#39;s Portfolio - aboutme</title>
+    <subtitle>A compilation of all of my interests and snapshot into my life</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://mattmarsico.com/tags/aboutme/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://mattmarsico.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-06-14T00:00:00+00:00</updated>
+    <id>https://mattmarsico.com/tags/aboutme/atom.xml</id>
+    <entry xml:lang="en">
+        <title>About Me</title>
+        <published>2025-06-14T00:00:00+00:00</published>
+        <updated>2025-06-14T00:00:00+00:00</updated>
+        
+        <author>
+          <name>Unknown</name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://mattmarsico.com/aboutme/"/>
+        <id>https://mattmarsico.com/aboutme/</id>
+        
+        <content type="html" xml:base="https://mattmarsico.com/aboutme/">&lt;h1 id=&quot;who-am-i&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#who-am-i&quot; aria-label=&quot;Anchor link for: who-am-i&quot;&gt;Who Am I?&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;My name is Matt Marsico. I am a musician, programmer, and hobbyist. My interests span across technology, music, fitness, camping, and more.&lt;/p&gt;
+&lt;h2 id=&quot;notice&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#notice&quot; aria-label=&quot;Anchor link for: notice&quot;&gt;NOTICE!&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;This page is currently being reworked. Story time will have to wait 😞&lt;/strong&gt;&lt;/p&gt;
+&lt;section
+  style=&quot;width: 100%; max-width: 100%; margin: 0 auto; text-align: center;&quot;&gt;
+  &lt;img src=&quot;https://mattmarsico.com/images/IMG_6550.JPG&quot;  alt=&quot;Young Matt Performing&quot; 
+    style=&quot;max-width: 100%; height: auto; display: inline-block;&quot;&gt;
+&lt;/section&gt;
+&lt;section
+  style=&quot;width: 100%; max-width: 100%; margin: 0 auto; text-align: center;&quot;&gt;
+  &lt;img src=&quot;https://mattmarsico.com/images/2023-05-12-22-15-08.jpeg&quot;  alt=&quot;Older Matt Performing&quot; 
+    style=&quot;max-width: 100%; height: auto; display: inline-block;&quot;&gt;
+&lt;/section&gt;
+</content>
+        
+    </entry>
+</feed>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Matt Marsico&#39;s Portfolio - learn</title>
+    <subtitle>A compilation of all of my interests and snapshot into my life</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://mattmarsico.com/tags/learn/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://mattmarsico.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2026-11-10T00:00:00+00:00</updated>
+    <id>https://mattmarsico.com/tags/learn/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Developer Resources</title>
+        <published>2026-11-10T00:00:00+00:00</published>
+        <updated>2026-11-10T00:00:00+00:00</updated>
+        
+        <author>
+          <name>Unknown</name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://mattmarsico.com/developer-resources/"/>
+        <id>https://mattmarsico.com/developer-resources/</id>
+        
+        <content type="html" xml:base="https://mattmarsico.com/developer-resources/">&lt;h1 id=&quot;developer-resources&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#developer-resources&quot; aria-label=&quot;Anchor link for: developer-resources&quot;&gt;Developer Resources&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Being a junior developer can be challenging; it can be the first time you are working on a large project or using a language at an advanced level.
+However, there is a massive amount of tribal knowledge that developers simply pick up with experience or by working on a specific team.
+I am putting this guide together to aggregate many beneficial guides, resources, and more that may not be included in your average CS curriculum.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note this will be continuously updated. Check-in every now and then to get the latest articles or resources!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://www.conventionalcommits.org/en/v1.0.0/&quot;&gt;Conventional Commits&lt;/a&gt; are a way to write smart git commit messages. Many
+projects use this convention, but even if they don&#39;t, you will at least have a template for structuring a commit message
+and following SemVer.&lt;/p&gt;
+</content>
+        
+    </entry>
+</feed>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Matt Marsico&#39;s Portfolio - gentoo</title>
+    <subtitle>A compilation of all of my interests and snapshot into my life</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://mattmarsico.com/tags/gentoo/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://mattmarsico.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2026-11-08T00:00:00+00:00</updated>
+    <id>https://mattmarsico.com/tags/gentoo/atom.xml</id>
+    <entry xml:lang="en">
+        <title>ESP-IDF On Gentoo</title>
+        <published>2026-11-08T00:00:00+00:00</published>
+        <updated>2026-11-08T00:00:00+00:00</updated>
+        
+        <author>
+          <name>Unknown</name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://mattmarsico.com/esp-idf-gentoo/"/>
+        <id>https://mattmarsico.com/esp-idf-gentoo/</id>
+        
+        <content type="html" xml:base="https://mattmarsico.com/esp-idf-gentoo/">&lt;h1 id=&quot;esp-idf-installation-on-gentoo&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#esp-idf-installation-on-gentoo&quot; aria-label=&quot;Anchor link for: esp-idf-installation-on-gentoo&quot;&gt;ESP-IDF Installation on Gentoo&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;ESP-IDF is only officially supported on Debian &amp;amp; RHEL-based distros, so here is a guide to getting up-and-running with a manual installation on Gentoo.&lt;/p&gt;
+&lt;h2 id=&quot;install-dependencies&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#install-dependencies&quot; aria-label=&quot;Anchor link for: install-dependencies&quot;&gt;Install Dependencies&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Usually, EIM would install these dependencies for us on a supported platform, but in this case we must install (and later maintain) all dependencies manually.&lt;/p&gt;
+&lt;pre class=&quot;giallo z-l-code z-d-code&quot; &gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-4 z-d-16&quot;&gt;sudo&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt; emerge&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-19&quot;&gt; -&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-19&quot;&gt;-ask&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-19&quot;&gt; \&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt;  dev-vcs/git&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-19&quot;&gt; \&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt;  dev-lang/python&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-19&quot;&gt; \&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt;  dev-python/pip&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-19&quot;&gt; \&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt;  dev-build/cmake&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-19&quot;&gt; \&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt;  dev-build/ninja&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-19&quot;&gt; \&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt;  dev-util/ccache&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-19&quot;&gt; \&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt;  app-mobilephone/dfu-util&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-19&quot;&gt; \&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt;  dev-libs/libffi&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-19&quot;&gt; \&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt;  dev-libs/openssl&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-19&quot;&gt; \&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt;  dev-libs/libusb&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-19&quot;&gt; \&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt;  dev-build/flex&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-19&quot;&gt; \&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt;  sys-devel/bison&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-19&quot;&gt; \&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt;  dev-util/gperf&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;download-eim&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#download-eim&quot; aria-label=&quot;Anchor link for: download-eim&quot;&gt;Download EIM&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Navigate to the &lt;a rel=&quot;noopener noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://dl.espressif.com/dl/eim/&quot;&gt;download site for EIM&lt;/a&gt; (ESP-IDF Installation Manager).&lt;/p&gt;
+&lt;p&gt;Download a &lt;strong&gt;CLI Installer&lt;/strong&gt; that works for you, in this case I chose the x64 version &lt;em&gt;(eim-cli-linux-x64-v0.21.1.zip)&lt;/em&gt; since I don&#39;t need any sort of multilib support.&lt;/p&gt;
+&lt;p&gt;Once you have downloaded it, unzip it to get the statically-linked binary.&lt;/p&gt;
+&lt;pre class=&quot;giallo z-l-code z-d-code&quot; &gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-4 z-d-16&quot;&gt;unzip&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt; eim-cli-linux-x64-v&lt;/span&gt;&lt;span class=&quot;z-l-5 z-d-12 z-d-i&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt;.zip&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will reveal a file &lt;code&gt;eim-v0.xx.y&lt;/code&gt; as well as a symlink &lt;code&gt;eim&lt;/code&gt; that you can use to run the program.&lt;/p&gt;
+&lt;h2 id=&quot;install-the-devkit&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#install-the-devkit&quot; aria-label=&quot;Anchor link for: install-the-devkit&quot;&gt;Install the DevKit&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Now, use the &lt;code&gt;eim&lt;/code&gt; binary to install the toolkit. We can skip the prerequisites check since we have manually installed all dependencies.&lt;/p&gt;
+&lt;pre class=&quot;giallo z-l-code z-d-code&quot; &gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-4 z-d-16&quot;&gt;./eim&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt; install&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-19&quot;&gt; -&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-19&quot;&gt;-skip-prerequisites-check&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If anything goes wrong or dependencies are not installed, the tool is pretty verbose so it should explain what else needs to be installed. If successfully proceed to the next part.&lt;/p&gt;
+&lt;p&gt;During my installation, it failed to copy the OpenOCD rules so I had to do the following.&lt;/p&gt;
+&lt;pre class=&quot;giallo z-l-code z-d-code&quot; &gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-4 z-d-16&quot;&gt;sudo&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt; install&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-19&quot;&gt; -&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-19&quot;&gt;Dm644&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-19&quot;&gt; \&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt;  /home/&lt;/span&gt;&lt;span class=&quot;z-l-5&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;z-l-5&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;z-l-5 z-d-14 z-d-i&quot;&gt;USER&lt;/span&gt;&lt;span class=&quot;z-l-5&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt;/.espressif/tools/openocd-esp32/v0.12.0-esp32-20260703/openocd-esp32/share/openocd/contrib/60-openocd.rules&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-19&quot;&gt; \&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt;  /etc/udev/rules.d/60-openocd.rules&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-4 z-d-16&quot;&gt;sudo&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt; udevadm&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt; control&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-19&quot;&gt; -&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-19&quot;&gt;-reload-rules&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-4 z-d-16&quot;&gt;sudo&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt; udevadm&lt;/span&gt;&lt;span class=&quot;z-l-6 z-d-7&quot;&gt; trigger&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;source-the-environment&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#source-the-environment&quot; aria-label=&quot;Anchor link for: source-the-environment&quot;&gt;Source the environment&lt;/a&gt;&lt;/h2&gt;
+&lt;pre class=&quot;giallo z-l-code z-d-code&quot; &gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-3 z-l-i z-d-8 z-d-i&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;z-l-3 z-l-i z-d-8 z-d-i&quot;&gt; bash / zsh&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-6 z-d-18&quot;&gt;source&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-7&quot;&gt; &amp;quot;&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-7&quot;&gt;~/.espressif/tools/activate_idf_v6.1.sh&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-7&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-3 z-l-i z-d-8 z-d-i&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;z-l-3 z-l-i z-d-8 z-d-i&quot;&gt; fish&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span class=&quot;z-l-6 z-d-18&quot;&gt;source&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-7&quot;&gt; &amp;quot;&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-7&quot;&gt;~/.espressif/tools/activate_idf_v6.1.fish&lt;/span&gt;&lt;span class=&quot;z-l-4 z-d-7&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;usage&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#usage&quot; aria-label=&quot;Anchor link for: usage&quot;&gt;Usage&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Now, you should be ready to use the devkit. Check out the &lt;a rel=&quot;noopener noreferrer external&quot; target=&quot;_blank&quot; href=&quot;https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/linux-macos-start-project.html&quot;&gt;guide to your first project&lt;/a&gt; on Espressif&#39;s website to get started.&lt;/p&gt;
+</content>
+        
+    </entry>
+</feed>

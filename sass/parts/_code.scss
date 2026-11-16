@@ -1,0 +1,395 @@
+// Giallo base styles (Zola >=0.22 syntax highlighting)
+.giallo-l {
+  display: inline-block;
+  min-height: 1lh;
+  width: 100%;
+}
+
+.giallo-ln {
+  display: inline-block;
+  user-select: none;
+  margin-right: 0.4em;
+  margin-left: 0.2em;
+}
+
+// Stronger line numbers and highlights than giallo defaults
+pre .giallo-ln {
+  color: #8c959f;
+}
+
+// Dark code block background in both themes
+pre.z-l-code {
+  background-color: #24292E;
+  color: #c7ced2;
+}
+
+pre .z-d-hl,
+pre .z-l-hl {
+  background-color: rgba(255, 208, 0, 0.15);
+  border-left: 3px solid rgba(255, 208, 0, 0.8);
+}
+
+// Language colors map — keys are Zola's data-lang values (giallo grammar names)
+$language-colors: (
+  "bat": #c1f12e,
+  "bibtex": #778899,
+  "c": #555555,
+  "c3": #2563eb,
+  "cairo": #ff4a48,
+  "chapel": #8dc63f,
+  "clojure": #db5855,
+  "coffee": #244776,
+  "coq": #d0b68c,
+  "cpp": #f34b7d,
+  "csharp": #a52f4e,
+  "css": #663399,
+  "dart": #00b4ab,
+  "fsharp": #b845fc,
+  "git-commit": #f44d27,
+  "go": #00add8,
+  "groovy": #4298b8,
+  "handlebars": #f7931e,
+  "hlsl": #aace60,
+  "html": #e34c26,
+  "hurl": #ff0288,
+  "ini": #d1dbe0,
+  "java": #b07219,
+  "javascript": #f1e05a,
+  "json": #292929,
+  "jsonc": #292929,
+  "jsonl": #292929,
+  "julia": #a270ba,
+  "latex": #3d6117,
+  "less": #1d365d,
+  "lua": #000080,
+  "make": #427819,
+  "markdown": #083fa1,
+  "objective-c": #438eff,
+  "openscad": #e5cd45,
+  "org": #77aa99,
+  "perl": #0298c3,
+  "php": #4f5d95,
+  "pkl": #6b9543,
+  "powershell": #012456,
+  "pug": #a86454,
+  "python": #3572a5,
+  "r": #198ce7,
+  "raku": #0000fb,
+  "ron": #a62c00,
+  "rosmsg": #22314e,
+  "rst": #141414,
+  "ruby": #701516,
+  "rust": #dea584,
+  "scss": #c6538c,
+  "shaderlab": #222c37,
+  "shellscript": #89e051,
+  "sql": #e38c00,
+  "swift": #f05138,
+  "tex": #3d6117,
+  "tsv": #237346,
+  "tsx": #3178c6,
+  "typescript": #3178c6,
+  "xml": #0060ac,
+  "xsl": #eb8ceb,
+  "abap": #e8274b,
+  "actionscript-3": #882b0f,
+  "ada": #02f88c,
+  "ahk": #6594b9,
+  "apache": #d12127,
+  "apex": #1797c0,
+  "apl": #5a8164,
+  "applescript": #101f1f,
+  "asciidoc": #73a0c5,
+  "asm": #6e4c13,
+  "astro": #ff5a03,
+  "awk": #c30e9b,
+  "ballerina": #ff5000,
+  "berry": #15a13c,
+  "bicep": #519aba,
+  "bird2": #b6d7e4,
+  "blade": #f7523f,
+  "cadence": #00ef8b,
+  "clarity": #5546ff,
+  "cmake": #da3434,
+  "codeql": #140f46,
+  "common-lisp": #3fb68b,
+  "crystal": #000100,
+  "csv": #237346,
+  "cue": #5886e1,
+  "cypher": #34c0eb,
+  "d": #ba595e,
+  "dotenv": #e5d559,
+  "edge": #0dffe0,
+  "elixir": #8847b9,
+  "elm": #60b5cc,
+  "emacs-lisp": #c065db,
+  "erb": #701516,
+  "erlang": #b83998,
+  "fennel": #fff3d7,
+  "fish": #4aae47,
+  "fluent": #ffcc33,
+  "fortran-free-form": #4d41b1,
+  "gdscript": #355570,
+  "gdshader": #478cbf,
+  "genie": #fb855d,
+  "gherkin": #5b2063,
+  "gleam": #ffaff3,
+  "glimmer-js": #f5835f,
+  "glimmer-ts": #3178c6,
+  "glsl": #5686a5,
+  "gnuplot": #f0a9f0,
+  "graphql": #e10098,
+  "hack": #878787,
+  "haml": #ece2a9,
+  "haskell": #5e5086,
+  "haxe": #df7900,
+  "hcl": #844fba,
+  "http": #005c9c,
+  "hxml": #f68712,
+  "hy": #7790b2,
+  "imba": #16cec6,
+  "jinja": #a52a22,
+  "jison": #56b3cb,
+  "json5": #267cb9,
+  "jsonnet": #0064bd,
+  "just": #384d54,
+  "kdl": #ffb3b3,
+  "kotlin": #a97bff,
+  "liquid": #67b8de,
+  "luau": #00a2ff,
+  "marko": #42bff2,
+  "matlab": #e16737,
+  "mdx": #fcb32c,
+  "mojo": #ff4c1f,
+  "move": #4a137a,
+  "nextflow": #3ac486,
+  "nginx": #009639,
+  "nim": #ffc200,
+  "nix": #7e7eff,
+  "nushell": #4e9906,
+  "ocaml": #ef7a08,
+  "odin": #60affe,
+  "pascal": #e3f171,
+  "plsql": #dad8d8,
+  "polar": #ae81ff,
+  "postcss": #dc3a0c,
+  "powerquery": #d38e0d,
+  "prisma": #0c344b,
+  "prolog": #74283c,
+  "puppet": #302b6d,
+  "purescript": #1d222d,
+  "qml": #44a51c,
+  "racket": #3c5caa,
+  "razor": #512be4,
+  "rbs": #701516,
+  "regexp": #009a00,
+  "sas": #b34936,
+  "sass": #a53b70,
+  "scala": #c22d40,
+  "scheme": #1e4aec,
+  "smalltalk": #596706,
+  "smithy": #c44536,
+  "solidity": #aa6746,
+  "soy": #0d948f,
+  "sparql": #0c4597,
+  "stata": #1a5f91,
+  "stylus": #ff6347,
+  "surrealql": #ff00a0,
+  "svelte": #ff3e00,
+  "system-verilog": #dae1c2,
+  "tcl": #e4cc98,
+  "templ": #66d0dd,
+  "terraform": #844fba,
+  "toml": #9c4221,
+  "twig": #c1d026,
+  "typespec": #4a3665,
+  "v": #4f87c4,
+  "vala": #a56de2,
+  "verilog": #b2b7f8,
+  "vhdl": #adb2cb,
+  "viml": #199f4b,
+  "vue": #41b883,
+  "vyper": #9f4cf2,
+  "wasm": #04133b,
+  "wgsl": #1a5e9a,
+  "wikitext": #fc5757,
+  "wit": #6250e7,
+  "wolfram": #dd1100,
+  "yaml": #cb171e,
+  "zenscript": #00bcd1,
+  "zig": #ec915c,
+  "moonbit": #b92381,
+  "typst": #239dad,
+);
+
+/// Function to get text color based on background brightness
+/// @param {Color} $color - The background color
+@function get-text-color($color) {
+  $r: red($color);
+  $g: green($color);
+  $b: blue($color);
+  $brightness: (
+    $r * 0.299 + $g * 0.587 + $b * 0.114
+  );
+
+@if ($brightness > 128) {
+  @return #000000; // Use black for bright backgrounds
+}
+
+@else {
+  @return #ffffff; // Use white for dark backgrounds
+}
+}
+
+/// Mixin for language label styles
+@mixin base-label-style($language) {
+  $color-info: map-get($language-colors, $language);
+  $bg-color: nth($color-info, 1);
+  $text-color: get-text-color($bg-color);
+
+  background: $bg-color;
+  color: $text-color;
+  border-radius: 0.25rem;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0.2rem 0.5rem;
+  text-transform: uppercase;
+  position: absolute;
+  top: 5px;
+  left: 5px; // Positioned at the top-left
+  z-index: 10; // Ensure it's above the code content
+}
+
+// Language label styles
+.code-label {
+  @each $language, $_ in $language-colors {
+    &.label-#{$language} {
+      @include base-label-style($language);
+    }
+  }
+}
+
+// CSS-only language label fallback (no JS)
+@each $language, $bg-color in $language-colors {
+  pre:not(:has(.code-label)):has(> code[data-lang="#{$language}"])::before {
+    content: "#{$language}";
+    background: $bg-color;
+    color: get-text-color($bg-color);
+    border-radius: 0.25rem;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0.2rem 0.5rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 10;
+  }
+}
+
+// Clipboard button styles
+.clipboard-button {
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 10;
+  background-color: transparent;
+  border: "#3D444D";
+  border-radius: 3px;
+
+  svg {
+    fill: #9198A1;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.light .clipboard-button {
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.5);
+  background-color: #f3f3f3;
+}
+
+pre {
+  border-radius: 5px;
+  border: none;
+  line-height: 1.4;
+  padding-top: 1.8em;
+  padding-bottom: 1em;
+  position: relative;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+
+  code {
+    border: none;
+    padding: 0;
+
+    table td {
+      padding: 0.4em;
+    }
+  }
+}
+
+pre::-webkit-scrollbar {
+  height: 8px;
+}
+
+pre::-webkit-scrollbar-thumb {
+  background-color: #3D444D;
+  border-radius: 4px;
+}
+
+pre::-webkit-scrollbar-track {
+  background-color: #1E222A;
+}
+
+a code:hover {
+  background: transparent;
+}
+
+// No-JS default: page is light without .dark/.light class, regardless of OS theme
+code:not(pre code) {
+  background: #d0cbc6;
+  color: #1f2328;
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+code,
+pre,
+kbd,
+samp {
+  font-size: 1.05em;
+  /* slightly larger than the surrounding text */
+  line-height: 1.6;
+}
+
+// Code blocks inside blockquotes - fill edge-to-edge
+blockquote > pre {
+  margin-left: -2ch;
+  margin-right: -2ch;
+  border-radius: 0;
+}
+
+blockquote > pre:first-child {
+  margin-top: 0;
+}
+
+blockquote > pre:last-child {
+  margin-bottom: 0;
+}
+
+blockquote:has(> pre:only-child) {
+  background-color: transparent;
+  box-shadow: none;
+
+  > pre {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
+
+.hack blockquote > pre code {
+  background: transparent;
+}
